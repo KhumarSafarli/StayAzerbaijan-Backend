@@ -1,7 +1,13 @@
-﻿
+﻿@model StayAzerbaijan.ViewModels.HotelsVM
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+
 <div class="hotels-section">
     <div class="header-text">
         <h5>#əməkdaşlıqlarımız</h5>
@@ -11,107 +17,46 @@
 </div>
 <div class="hotels-list">
     <div class="list-container">
-        <div class="hotel-example-card">
-            <img src="../assets/images/hotel-img.jpeg" class="hotel-img" />
-            <div class="info-part">
-                <a href="./hotel-detail-page.html" class="hotel-name">
-                    Shamakhi Palace
-                </a>
-                <h5 class="hotel-price">
-                    qiymət başlayır: ₼185/gecə
-                </h5>
-                <p class="hotel-location"><img src="../assets/icons/location.svg" /> Şamaxı</p>
-                <p class="hotel-category">kateqoriya: Ailəvi, bal ayı</p>
+        @foreach (var hotel in Model.Hotels)
+        {
+            <div class="hotel-example-card hotel-item">
+                <img src="~/../assets/images/@hotel.MainImgUrl" class="hotel-img" style="width:100%;" />
+                <div class="info-part">
+                    <a href="#" class="hotel-name">@hotel.Name</a>
+                    <h5 class="hotel-price">Qiymət başlayır: ₼@hotel.Price/gecə</h5>
+                    <p class="hotel-location"><img src="../assets/icons/location.svg" /> @hotel.Location</p>
+                    <p class="hotel-category">Kateqoriya: @(hotel.HotelCategories != null ? string.Join(", ", hotel.HotelCategories.Where(c => c.Category != null).Select(c => c.Category.Name)) : "No Categories")</p>
+                </div>
+                <div class="line"></div>
             </div>
-            <div class="line"></div>
-        </div>
-        <div class="hotel-example-card">
-            <img src="../assets/images/hotel-img.jpeg" class="hotel-img" />
-            <div class="info-part">
-                <a href="./hotel-detail-page.html" class="hotel-name">
-                    Shamakhi Palace
-                </a>
-                <h5 class="hotel-price">
-                    qiymət başlayır: ₼185/gecə
-                </h5>
-                <p class="hotel-location"><img src="../assets/icons/location.svg" /> Şamaxı</p>
-                <p class="hotel-category">kateqoriya: Ailəvi, bal ayı</p>
-            </div>
-            <div class="line"></div>
-        </div>
-        <div class="hotel-example-card">
-            <img src="../assets/images/hotel-img.jpeg" class="hotel-img" />
-            <div class="info-part">
-                <a href="./hotel-detail-page.html" class="hotel-name">
-                    Shamakhi Palace
-                </a>
-                <h5 class="hotel-price">
-                    qiymət başlayır: ₼185/gecə
-                </h5>
-                <p class="hotel-location"><img src="../assets/icons/location.svg" /> Şamaxı</p>
-                <p class="hotel-category">kateqoriya: Ailəvi, bal ayı</p>
-            </div>
-            <div class="line"></div>
-        </div>
-        <div class="hotel-example-card">
-            <img src="../assets/images/hotel-img.jpeg" class="hotel-img" />
-            <div class="info-part">
-                <a href="./hotel-detail-page.html" class="hotel-name">
-                    Shamakhi Palace
-                </a>
-                <h5 class="hotel-price">
-                    qiymət başlayır: ₼185/gecə
-                </h5>
-                <p class="hotel-location"><img src="../assets/icons/location.svg" /> Şamaxı</p>
-                <p class="hotel-category">kateqoriya: Ailəvi, bal ayı</p>
-            </div>
-            <div class="line"></div>
-        </div>
+        }
     </div>
-    <button class="show-more">Daha çox göstər</button>
-    <div class="footer">
-        <div class="footer-container">
-            <div class="logo-navigation">
-                <div class="logo">
-                    <a href="./home.html">
-                        <img src="~/../assets/icons/logo2.png" />
-                        <div class="line"></div>
-                    </a>
-                    <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
-                </div>
-                <div class="slogan">
-                    <p class="slogan-text">Komfort və güvənli </br>istirahətin məkanı!</p>
-                </div>
-                <div class="social-media-icons">
-                    <a href="#"><img src="~/../assets/icons/linkedin.svg" /></a>
-                    <a href="#"><img src="~/../assets/icons/facebook.svg" /></a>
-                    <a href="#"><img src="~/../assets/icons/twitter.svg" /></a>
-                    <a href="#"><img src="~/../assets/icons/twoo.svg" /></a>
-                </div>
-            </div>
-            <div class="company">
-                <h3>Məlumat</h3>
-                <a href="./about.html">Haqqımızda</a>
-                <a href="./contact.html">Əlaqə</a>
-                <a href="./hotels.html">Otellər</a>
-                <a href="./transfer.html">Transfer xidmətləri</a>
-            </div>
-            <div class="subscribe">
-                <h3>Yeniliklərdən ilk xəbərdar olmaq<br> üçün abunə ol</h3>
-                <div class="email-subscribe">
-                    <form class="subscribe-form">
-                        <div class="subscribe-btn">
-                            <input type="email" id="email" name="email" placeholder="E-mail ünvanını daxil et" required class="email">
-                            <button class="submitbutton">Abunə ol</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-
-
-        </div>
-        <img class="footer-img" src="~/../assets/images/footer.png" />
-    </div>
+    @if (!Model.Hotels.Any())
+    {
+        <button id="show-more-btn" class="show-more" style="display: none;">Daha çox göstər</button>
+    }
+    else
+    {
+        <button id="show-more-btn" class="show-more">Daha çox göstər</button>
+    }
 </div>
 
+@section Scripts {
+    <script>
+        var page = 2;
+        var pageSize = 3;
+
+        $('#show-more-btn').click(function () {
+            $.ajax({
+                url: '@Url.Action("GetMoreHotels", "Hotels")',
+                data: { page: page, pageSize: pageSize },
+                success: function (data) {
+                    $('.list-container').append(data);
+                    page++;
+                }
+            });
+        });
+    </script>
+}
+
+}
