@@ -9,7 +9,8 @@
             public Hotel Hotel { get; set; }
             public string BedType { get; set; }
             public string Landscape { get; set; }
-
+            public int Capacity { get; set; }
+        public int Size { get; set; }
            public ICollection<RoomImage> RoomImages { get; set; }
     }
     }

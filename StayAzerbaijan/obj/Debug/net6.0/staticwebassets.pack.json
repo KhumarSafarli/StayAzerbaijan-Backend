@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\dashed.png"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\deluxe.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\deluxe.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\footer.png",
       "PackagePath": "staticwebassets\\assets\\images\\footer.png"
     },
@@ -369,6 +373,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\standart-car.png"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\suite.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\suite.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\travelpic.png",
       "PackagePath": "staticwebassets\\assets\\images\\travelpic.png"
     },
@@ -379,6 +387,10 @@
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\video.mp4",
       "PackagePath": "staticwebassets\\assets\\images\\video.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\villa.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\villa.jpg"
     },
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\vipcar.png",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qc+BOzqNxPpYkHt7v8DtbTpKo10Onb8icbppMA/FMYU=",
+  "Hash": "fQeHW6rSutJgHWAi4+t+uYALHVajyr1XLIHJM1twWTs=",
   "Source": "StayAzerbaijan",
   "BasePath": "_content/StayAzerbaijan",
   "Mode": "Default",
@@ -1037,6 +1037,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\dashed.png"
     },
     {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\deluxe.jpg",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/deluxe.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\deluxe.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\Ellipse.png",
       "SourceId": "StayAzerbaijan",
       "SourceType": "Discovered",
@@ -1581,6 +1598,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\standart-car.png"
     },
     {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\suite.jpg",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/suite.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\suite.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\travelpic.png",
       "SourceId": "StayAzerbaijan",
       "SourceType": "Discovered",
@@ -1630,6 +1664,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\video.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\villa.jpg",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/villa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\villa.jpg"
     },
     {
       "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\vipcar.png",

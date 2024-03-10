@@ -22,7 +22,7 @@
             <div class="hotel-example-card hotel-item">
                 <img src="~/../assets/images/@hotel.MainImgUrl" class="hotel-img" style="width:100%;" />
                 <div class="info-part">
-                    <a href="#" class="hotel-name">@hotel.Name</a>
+                    <a href="@Url.Action("Index", "Detail", new { id = hotel.Id })" class="hotel-name">@hotel.Name</a>
                     <h5 class="hotel-price">Qiymət başlayır: ₼@hotel.Price/gecə</h5>
                     <p class="hotel-location"><img src="../assets/icons/location.svg" /> @hotel.Location</p>
                     <p class="hotel-category">Kateqoriya: @(hotel.HotelCategories != null ? string.Join(", ", hotel.HotelCategories.Where(c => c.Category != null).Select(c => c.Category.Name)) : "No Categories")</p>
@@ -57,6 +57,4 @@
             });
         });
     </script>
-}
-
 }

@@ -19,7 +19,7 @@ namespace StayAzerbaijan.Controllers
         {
             var hotels = _context.Hotels
                 .Include(h => h.HotelCategories)
-                .Take(3) 
+                .Take(3)
                 .ToList();
 
             var categories = _context.Categories.ToList();
@@ -38,5 +38,7 @@ namespace StayAzerbaijan.Controllers
             return PartialView("_HotelPartial", hotels);
         }
 
+
     }
+
 }

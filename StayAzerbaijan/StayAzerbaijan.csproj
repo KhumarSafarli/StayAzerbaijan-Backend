@@ -27,7 +27,6 @@
     <Folder Include="Areas\" />
     <Folder Include="Services\" />
     <Folder Include="ViewComponents\" />
-    <Folder Include="Views\Detail\" />
   </ItemGroup>
 
 </Project>

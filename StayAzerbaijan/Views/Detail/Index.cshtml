@@ -1,0 +1,80 @@
+﻿@model StayAzerbaijan.ViewModels.HotelsVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="hotel-details-section" style="background-image: url('@Url.Content("~/../assets/images/" + Model.Hotel.sliderImgUrl)');">
+
+    <div class="hotel-name-header">
+        <h1 class="hotel-name" style="color:white;">@Model.Hotel.Name</h1>
+    </div>
+    <div class="hotel description">
+        <p class="desc-text">@Model.Hotel.Description</p>
+    </div>
+</div>
+<div class="accomodations">
+    <div class="room-detail-info">
+        <h3 class="rooms"> Otaqlar</h3>
+        <p class="information-box">Discover our hotel's exceptional amenities, including a luxurious spa, fine dining restaurants, state-of-the-art fitness center, and personalized concierge services.</p>
+    </div>
+    <div class="rooms-list">
+        @foreach (var room in Model.Hotel.Rooms)
+        {
+            <div class="room-example" style="height:100%">
+                <div class="room-photo">
+                    @if (room.RoomImages != null && room.RoomImages.Any())
+                    {
+                        <img src="~/../assets/images/@room.RoomImages.First().ImgUrl" />
+                    }
+                    else
+                    {
+                        <img src="~/../assets/images/default-room-image.jpg" />
+                    }
+
+                </div>
+                <div class="room-description">
+                    <div class="pax-and-type">
+
+                        <h5 class="room-type">@room.Name</h5>
+                        <p class="pax-number" ><img src="~/../assets/icons/user.svg" />@room.Capacity</p>
+                    </div>
+                    <p class="price-per-night" style="font-size:14px;">₼@room.Price / gecə</p>
+                </div>
+                <div class="room-size">
+                    <p class="size-of-room" style="font-size:14px;"><img src="~/../assets/icons/house.svg" />Otaq ölçüsü: @room.Size m²</p>
+                </div>
+                <div class="landscape-type">
+                    <p class="landscape" style="font-size:14px;"><img src="~/../assets/icons/landscape.svg" />Otaq mənzərəsi: @room.Landscape</p>
+                </div>
+                <div class="bed-type">
+                    <p class="bed" style="font-size:14px;"><img src="~/../assets/icons/bed.svg" />@room.BedType</p>
+                </div>
+            </div>
+        }
+       
+       
+
+    </div>
+</div>
+<div class="amenities">
+    <div class="header">
+        <h4>Bütün otaqlarda aşağıda qeyd olunan avadanlıqlar mövcuddur:</h4>
+    </div>
+    <div class="amenities-table">
+        <div class="table">
+            <p>✓ Bathroom</p>
+            <p>✓ Wifi</p>
+            <p>✓ Iron/Ironing board</p>
+        </div>
+        <div class="table">
+            <p>✓ LCD/Led Tv</p>
+            <p>✓ Mini Bar</p>
+            <p>✓ Air Conditioner</p>
+        </div>
+        <div class="table">
+            <p>✓ Hair dryer</p>
+            <p>✓ Kettle/ Coffee and tea</p>
+            <p>✓ Heater</p>
+        </div>
+    </div>
+</div>
