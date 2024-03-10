@@ -1,0 +1,63 @@
+.why-us {
+  width: 100%;
+  height: 100%;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+
+  .ad-container {
+    width: 100%;
+    height: 292.938px;
+    background-color: #ff8730;
+    padding: 50px 0px;
+    @include center-items;
+    justify-content: center;
+    @include for-size(tablet) {
+      height: 100%;
+    }
+
+    .info-box {
+      @include center-items;
+      justify-content: center;
+      width: 1078.239px;
+      height: 206.872px;
+      background-color: white;
+      border-radius: 15.614px;
+      box-shadow: 0px 10.149px 15.614px 2.342px rgba(0, 0, 0, 0.15);
+      @include for-size(mobile) {
+        height: 100%;
+      }
+      .info-items {
+        @include center-items;
+        justify-content: center;
+        gap: 200px;
+        @include for-size(tablet) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 80px;
+        }
+        @include for-size(mobile) {
+          gap: 30px;
+          flex-direction: column;
+        }
+        h2 {
+          display: flex;
+          font-size: 31.228px;
+          color: black;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        .hotels,
+        .customers,
+        .corporate {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

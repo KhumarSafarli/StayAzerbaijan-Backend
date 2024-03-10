@@ -1,0 +1,83 @@
+.footer {
+  border-top: 1px solid rgba(128, 128, 128, 0.543);
+  position: relative;
+  @include center-items;
+  width: 100%;
+  height: 450px;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  justify-content: center;
+  .footer-container {
+    display: flex;
+    gap: 180px;
+    justify-content: center;
+    padding: 30px 0px;
+    @include for-size(tablet) {
+      gap: 30px;
+    }
+    @include for-size(mobile) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    border-bottom: 2px solid rgba(139, 139, 139, 0.568);
+    .logo-navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .logo {
+        display: flex;
+        transform: translateX(-20px);
+        @include for-size(mobile) {
+          display: none;
+        }
+        img {
+          transform: translateY(-10px);
+          width: 60px;
+        }
+      }
+      .slogan {
+        @include for-size(mobile) {
+          display: none;
+        }
+      }
+      .social-media-icons {
+        @include center-items;
+        gap: 13px;
+      }
+      .logo-text {
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(23, 12, 48);
+        font-weight: 700;
+      }
+    }
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a {
+      color: gray;
+      transition: 0.2s;
+      &:hover {
+        color: rgb(23, 12, 48);
+      }
+    }
+    h3 {
+      color: rgb(23, 12, 48);
+    }
+  }
+  .footer-img {
+    position: absolute;
+    right: 0;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3 {
+      color: rgb(23, 12, 48);
+    }
+  }
+}

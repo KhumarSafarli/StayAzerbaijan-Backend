@@ -1,0 +1,54 @@
+.hotel-example-card {
+  width: 300px;
+  height: 450px;
+  position: relative;
+  transition: 0.3s;
+
+  .hotel-name {
+    color: rgb(143, 76, 0);
+    font-size: 20px;
+    &:hover {
+      color: rgb(231, 138, 31);
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .line {
+    margin-top: 30px;
+    width: 0px;
+    height: 1px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transition: width 0.4s ease-in-out, visibility 0.4s ease-in-out; /* Modified */
+  }
+  &:hover .line {
+    visibility: visible;
+    width: 200px;
+  }
+  @include center-items;
+  flex-direction: column;
+  gap: 20px;
+  .info-part {
+    @include center-items;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    .hotel-location {
+      img {
+        width: 10px;
+      }
+    }
+  }
+  .hotel-img {
+    width: 250px;
+    height: 450px;
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+  }
+}

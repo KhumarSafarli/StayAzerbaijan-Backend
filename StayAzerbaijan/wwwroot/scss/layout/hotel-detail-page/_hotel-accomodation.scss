@@ -1,0 +1,48 @@
+.accomodations {
+  width: 100%;
+  padding: 20px 10px;
+  @include center-items;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.221);
+  gap: 30px;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  .room-detail-info {
+    @include center-items;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    .rooms {
+      font-size: 48px;
+      font-weight: 300;
+      @include for-size(mobile) {
+        font-size: 36px;
+      }
+    }
+    .information-box {
+      @include for-size(mobile) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .rooms-list {
+    width: 1000px;
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+    @include for-size(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+    }
+    @include for-size(mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+﻿@model StayAzerbaijan.ViewModels.HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<body>
+   
+    <div class="sub-bar-container">
+        <div class="sub-bar">
+            <div class="hotels">
+                <img src="~/../assets/icons/hotel.svg" />
+                <a asp-controller="Hotels" asp-action="Index">Otellər</a>
+            </div>
+            <div class="line-between"></div>
+            <div class="transfers">
+                <a asp-controller="Transfer" asp-action="Index">Transfer xidmətləri</a>
+                <img src="~/../assets/icons/car.svg" />
+            </div>
+        </div>
+    </div>
+    <div class="search-section">
+        <div class="background-part">
+            <div class="rectangle">
+                <img src="~/../assets/images/rectangle.png" />
+            </div>
+            <div class="header">
+                <h1>
+                    Azərbaycanda ilk <br />
+                    <span class="small-text">otel rezervasiya platforması</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="booking-box">
+            <div class="form" style="
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+">
+                <div class="booking-container">
+                    <div class="city">
+                        <img src="/../assets/icons/location.svg">
+                        <label for="city">İstiqamət:</label>
+                        <input type="text" class="location" id="city" name="city" placeholder="Şəhər/Otel adı">
+                    </div>
+                    <div class="check-in">
+                        <img src="/../assets/icons/calendar.svg">
+                        <label for="check-in">Giriş:</label>
+                        <input type="text" id="check-in" name="check-in" class="custom-calendar flatpickr-input" readonly="readonly">
+                    </div>
+
+                    <div class="check-out">
+                        <img src="/../assets/icons/calendar.svg">
+                        <label for="check-out">Çıxış:</label>
+                        <input type="text" id="check-out" name="check-out" class="flatpickr-input" readonly="readonly">
+                    </div>
+                    <div class="pax">
+                        <img src="/../assets/icons/person.svg">
+                        <label for="guests">Böyük:</label>
+                        <select id="guests" name="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="0">0</option>
+                        </select>
+                    </div>
+                    <div class="pax">
+                        <img src="/../assets/icons/baby.svg">
+                        <label for="children">Uşaq:</label>
+                        <select id="guests" name="guests">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="search-btn">
+                    <button type="submit"><img src="/../assets/icons/search.svg"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="main-container">
+            <div class="banner">
+                <img src="~/../assets/icons/baggage.png" />
+                <p>#hazırlaşgedək</p>
+                <h1>Həftəsonu harada dincəlim?</h1>
+                <div class="line"></div>
+                <h3>Yerlər bitmədən elə indi rezervasiya et<img src="~/../assets/icons/click.svg" /></h3>
+                <p>Bu həftəsonu üçün mövcud yerlər:</p>
+
+
+            </div>
+            <div class="available-hotels">
+                @foreach (var hotel in Model.Hotels.Where(h => h.IsAvailableOnWeekend))
+                {
+                    <div class="hotel-card" style="background-image: url('~/../assets/images/@hotel.MainImgUrl'); background-size: cover;">
+                        <div class="top">
+                            <h2 class="person">2 nəfər</h2>
+                            <h3 class="price">₼ @hotel.Price</h3>
+                        </div>
+                        <div class="hotel-name">
+                            <h4 class="hotel">@hotel.Name</h4>
+                        </div>
+                        <a asp-controller="Reservation" asp-action="Reservation" asp-route-hotelId="@hotel.Id" class="reserve-button">Rezervasiya et</a>
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="why-us">
+        <div class="ad-container">
+            <div class="info-box">
+                <div class="info-items">
+                    <div class="hotels">
+
+                        <h2>160<p style="color:blue">+</p></h2>
+                        <h3> otel</h3>
+                    </div>
+                    <div class="customers">
+                        <h2>2500<p style="color:blue">+</p></h2>
+                        <h3>razı müştəri</h3>
+                    </div>
+                    <div class="corporate">
+                        <h2>147<p style="color:blue">+</p></h2>
+                        <h3>korporativ əməkdaşlıq</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trending-section">
+        <div class="headline">
+            <img src="~/../assets/icons/heart.svg" />
+            <h5>#buralarsevilir</h5>
+            <h1>Ən çox sevilən otellər</h1>
+        </div>
+
+        <div class="trend-hotels">
+            <button class="left"><img src="~/../assets/icons/left.svg" /></button>
+            @foreach (var hotel in Model.Hotels)
+            {
+                <div class="hotel-card">
+                    <img class="hotel-pic" src="~/../assets/images/@hotel.MainImgUrl" />
+                    <div class="location">
+                        <img src="~/../assets/icons/location.svg" />
+                        <p class="location-name">@hotel.Location</p>
+                    </div>
+                    <div class="name-rating">
+                        <div class="name">
+                            <h2>@hotel.Name</h2>
+                        </div>
+                        <div class="rating">
+                            @for (int i = 0; i < hotel.Star; i++)
+                            {
+                                <img class="@i" src="~/../assets/icons/star.svg" />
+                            }
+                        </div>
+                    </div>
+                    <div class="price-tag">
+                        <p class="price">@((hotel.Price * 2).ToString("N2")) ₼ / 2 gecə</p>
+
+                        <p class="pax" style="font-size:12px;"> <img src="~/../assets/icons/user.svg" />2 nəfər</p>
+                    </div>
+                  
+                    <button class="etrafli">Ətraflı</button>
+                </div>
+            }
+            <button class="right"><img src="~/../assets/icons/right.svg" /></button>
+        </div>
+    </div>
+
+    <div class="review-section">
+        <div class="review-container">
+            <div class="header">
+                <img src="~/../assets/icons/comment.svg" />
+                <h5>#sizdəngələnlər</h5>
+                <h1>Müştərilərimizin rəyi</h1>
+            </div>
+            <div class="comment">
+                <img src="~/../assets/images/profilepic.png" class="profile" />
+                <img src="~/../assets/icons/dirnag.svg" class="dirnag" />
+                <p class="review-comment">"Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis."</p>
+                <h5 class="name">Sevda Abbasova</h5>
+            </div>
+        </div>
+        <img class="travel" src="~/../assets/images/travelpic.png" />
+    </div>
+   
+
+</body>
+</html>

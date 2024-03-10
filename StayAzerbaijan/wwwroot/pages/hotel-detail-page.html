@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script defer src="../common/subscribe.js"></script>
+    <script defer src="../common/burger-menu.js"></script>
+    <script defer src="../common/book.js"></script>
+    <script defer src="../common/trending.js"></script>
+    <title>Otellər</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <div class="navbar">
+          <div class="left-side">
+            <a href="./home.html"
+              ><img src="../assets/icons/logo2.png" />
+              <div class="line"></div>
+            </a>
+            <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+          </div>
+          <div class="right-side">
+            <div class="nav-items">
+              <a href="./contact.html" class="contact">Əlaqə</a>
+              <a href="./about.html" class="about">Haqqımızda</a>
+              <div class="currency">
+                <select id="currency-select">
+                  <option value="AZN">AZN</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                </select>
+              </div>
+
+              <div class="daxil-ol">
+                <img src="../assets/icons/login.svg" />
+                <a href="./login.html" class="login"> Daxil ol</a>
+              </div>
+              <div class="register">
+                <a href="#" class="login"> Hesab yarat</a>
+              </div>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+              <img src="../assets/icons/burger.svg" class="sidebar-icon" />
+              <div class="nav-links">
+                <a href="./contact.html" class="contact">Əlaqə</a>
+                <a href="./about.html" class="about">Haqqımızda</a>
+                <a href="./login.html" class="login"> Daxil ol</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hotel-details-section">
+        <div class="hotel-name-header">
+            <h1 class="hotel-name">Shamakhi Palace</h1>
+        </div>
+        <div class="hotel description">
+            <p class="desc-text">Experience unparalleled luxury and comfort at our exquisite hotel, where every detail is crafted for your ultimate relaxation and enjoyment.</p>
+        </div>
+    </div>
+    <div class="accomodations">
+        <div class="room-detail-info">
+            <h3 class="rooms"> Otaqlar</h3>
+            <p class="information-box">Discover our hotel's exceptional amenities, including a luxurious spa, fine dining restaurants, state-of-the-art fitness center, and personalized concierge services.</p>
+        </div>
+        <div class="rooms-list">
+            <div class="room-example">
+                <div class="room-photo">
+                    <img src="../assets/images/hotelroom.jpg"/>
+                </div>
+                <div class="room-description">
+                    <div class="pax-and-type">
+                      
+                        <h5 class="room-type">Deluxe Room</h5>
+                        <p class="pax-number"><img src="../assets/icons/user.svg"/>2 nəfər</p>
+                    </div>
+                   <p class="price-per-night">₼ 189 / gecə</p>
+                </div>
+                <div class="room-size">
+                    <p class="size-of-room">
+                        <img src="../assets/icons/house.svg"/>Otaq ölçüsü: 160 m²
+                    </p>
+                </div>
+                <div class="landscape-type">
+                    <p class="landscape"><img src="../assets/icons/landscape.svg"/>Otaq mənzərəsi: Dağ</p>
+                </div>
+                <div class="bed-type">
+                    <p class="bed"><img src="../assets/icons/bed.svg"/>1 King Bed</p>
+                </div>
+            </div>
+            <div class="room-example">
+                <div class="room-photo">
+                    <img src="../assets/images/hotelroom.jpg"/>
+                </div>
+                <div class="room-description">
+                    <div class="pax-and-type">
+                      
+                        <h5 class="room-type">Deluxe Room</h5>
+                        <p class="pax-number"><img src="../assets/icons/user.svg"/>2 nəfər</p>
+                    </div>
+                   <p class="price-per-night">₼ 189 / gecə</p>
+                </div>
+                <div class="room-size">
+                    <p class="size-of-room">
+                        <img src="../assets/icons/house.svg"/>Otaq ölçüsü: 160 m²
+                    </p>
+                </div>
+                <div class="landscape-type">
+                    <p class="landscape"><img src="../assets/icons/landscape.svg"/>Otaq mənzərəsi: Dağ</p>
+                </div>
+                <div class="bed-type">
+                    <p class="bed"><img src="../assets/icons/bed.svg"/>1 King Bed</p>
+                </div>
+            </div>
+            <div class="room-example">
+                <div class="room-photo">
+                    <img src="../assets/images/hotelroom.jpg"/>
+                </div>
+                <div class="room-description">
+                    <div class="pax-and-type">
+                      
+                        <h5 class="room-type">Deluxe Room</h5>
+                        <p class="pax-number"><img src="../assets/icons/user.svg"/>2 nəfər</p>
+                    </div>
+                   <p class="price-per-night">₼ 189 / gecə</p>
+                </div>
+                <div class="room-size">
+                    <p class="size-of-room">
+                        <img src="../assets/icons/house.svg"/>Otaq ölçüsü: 160 m²
+                    </p>
+                </div>
+                <div class="landscape-type">
+                    <p class="landscape"><img src="../assets/icons/landscape.svg"/>Otaq mənzərəsi: Dağ</p>
+                </div>
+                <div class="bed-type">
+                    <p class="bed"><img src="../assets/icons/bed.svg"/>1 King Bed</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="amenities">
+        <div class="header">
+            <h4>Bütün otaqlarda aşağıda qeyd olunan avadanlıqlar mövcuddur:</h4>
+        </div>
+       <div class="amenities-table">
+        <div class="table">
+            <p>✓ Bathroom</p>
+            <p>✓ Wifi</p>
+            <p>✓ Iron/Ironing board</p>
+        </div>
+        <div class="table">
+            <p>✓ LCD/Led Tv</p>
+            <p>✓ Mini Bar</p>
+            <p>✓ Air Conditioner</p>
+        </div>
+        <div class="table">
+            <p>✓ Hair dryer</p>
+            <p>✓ Kettle/ Coffee and tea</p>
+            <p>✓ Heater</p>
+        </div>
+       </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+          <div class="logo-navigation">
+            <div class="logo">
+              <a href="./home.html"
+              ><img src="../assets/icons/logo2.png" />
+              <div class="line"></div>
+            </a>
+            <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+            </div>
+            <div class="slogan">
+              <p class="slogan-text">Komfort və güvənli </br>istirahətin məkanı!</p>
+            </div>
+            <div class="social-media-icons">
+              <a href="#"><img src="../assets/icons/linkedin.svg"/></a>
+              <a href="#"><img src="../assets/icons/facebook.svg"/></a>
+              <a href="#"><img src="../assets/icons/twitter.svg"/></a>
+              <a href="#"><img src="../assets/icons/twoo.svg"/></a>
+            </div>
+          </div>
+          <div class="company">
+            <h3>Məlumat</h3>
+            <a href="./about.html">Haqqımızda</a>
+            <a href="./contact.html">Əlaqə</a>
+            <a href="./hotels.html">Otellər</a>
+            <a href="./transfer.html">Transfer xidmətləri</a>
+          </div>
+          <div class="subscribe">
+            <h3>Yeniliklərdən ilk xəbərdar olmaq<br> üçün abunə ol</h3>
+            <div class="email-subscribe">
+              <form class="subscribe-form">
+                  <div class="subscribe-btn">
+                      <input type="email" id="email" name="email" placeholder="E-mail ünvanını daxil et" required class="email">
+                      <button class="submitbutton">Abunə ol</button>
+                    </div>
+              </form>
+          </div>
+        </div>
+        
+        </div>
+        <img class="footer-img" src="../assets/images/footer.png"/>
+      </div>
+  </body>
+</html>

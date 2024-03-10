@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/main.css" />
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script defer src="../common/subscribe.js"></script>
+    <script defer src="../common/burger-menu.js"></script>
+    <script defer src="../common/book.js"></script>
+    <script defer src="../common/trending.js"></script>
+    <script defer src="../common/register.js"></script>
+    <title>Stay Azerbaijan | Hesab yarat</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <div class="navbar">
+          <div class="left-side">
+            <a href="./home.html"
+              ><img src="../assets/icons/logo2.png" />
+              <div class="line"></div>
+            </a>
+            <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+          </div>
+          <div class="right-side">
+            <div class="nav-items">
+              <a href="./contact.html" class="contact">Əlaqə</a>
+              <a href="./about.html" class="about">Haqqımızda</a>
+              <div class="currency">
+                <select id="currency-select">
+                    <option value="AZN">AZN</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                  </select>
+              </div>
+
+              <div class="daxil-ol">
+                <img src="../assets/icons/login.svg" />
+                <a href="./login.html" class="login"> Daxil ol</a>
+              </div>
+              <div class="register">
+                <a href="./register.html" class="login"> Hesab yarat</a>
+              </div>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+              <img src="../assets/icons/burger.svg" class="sidebar-icon" />
+              <div class="nav-links">
+                <a href="./contact.html" class="contact">Əlaqə</a>
+                <a href="./about.html" class="about">Haqqımızda</a>
+                <a href="./login.html" class="login"> Daxil ol</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="register-section">
+      <div class="left">
+          <div class="header">
+              <h1>Hesab yarat</h1>
+              <p>Xoş gəldin! Yeni hesab yarat, rezervasiyaya başla.</p>
+          </div>
+          <form class="submit-form">
+              <div class="name">
+                 
+                  <input
+                      type="text"
+                      id="firstname"
+                      placeholder="Ad"
+                      class="firstname"
+                      required
+                  />
+                  <p class="error-message"></p>
+            
+              </div>
+             
+              <div class="surname">
+                <input
+                      type="text"
+                      id="lastname"
+                      placeholder="Soyad"
+                      class="lastname"
+                      required
+                  />
+                  <p class="error-message"></p>
+              </div>
+              
+              <div class="email">
+             
+                  <input
+                      type="email"
+                      id="email"
+                      placeholder="Email ünvanı"
+                      class="email-input"
+                      required
+                  />
+                  <p class="error-message"></p>
+              </div>
+  
+              <div class="password">
+                
+                  <input
+                      type="password"
+                      id="password"
+                      placeholder="Şifrə"
+                      class="password-input"
+                      required
+                  />
+                  
+                  <p class="error-message"></p>
+              </div>
+              <div class="confirm-password">
+                <input
+                      type="password"
+                      id="confirmPassword"
+                      placeholder="Şifrəni təkrarla"
+                      class="confirm-password"
+                       required
+                  />
+                  <p class="error-message"></p>
+              </div>
+              <div class="password-validation-box" id="password-validation-box">
+                <h5> Şifrə qeyd olunan qaydalara riayət etməlidir:</h5>
+                <p id="lowercase" class="invalid">Kiçik hərf</p>
+                <p id="capital-letter" class="invalid">Böyük hərf</p>
+                <p id="number" class="invalid">Rəqəm</p>
+                <p id="length" class="invalid">Minimum 8 element</p>
+             </div>
+              <button type="submit" class="submit">Yarat</button>
+              <a href="./login.html">Hesabın var artıq? O zaman daxil ol.</a>
+          </form>
+      </div>
+      <div class="right">
+          <img src="../assets/images/mobile.png"/>
+      </div>
+  </div>
+  
+      <div class="footer">
+        <div class="footer-container">
+          <div class="logo-navigation">
+            <div class="logo">
+              <a href="./home.html"
+              ><img src="../assets/icons/logo2.png" />
+              <div class="line"></div>
+            </a>
+            <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+            </div>
+            <div class="slogan">
+              <p class="slogan-text">Komfort və güvənli </br>istirahətin məkanı!</p>
+            </div>
+            <div class="social-media-icons">
+              <a href="#"><img src="../assets/icons/linkedin.svg"/></a>
+              <a href="#"><img src="../assets/icons/facebook.svg"/></a>
+              <a href="#"><img src="../assets/icons/twitter.svg"/></a>
+              <a href="#"><img src="../assets/icons/twoo.svg"/></a>
+            </div>
+          </div>
+          <div class="company">
+            <h3>Məlumat</h3>
+            <a href="./about.html">Haqqımızda</a>
+            <a href="./contact.html">Əlaqə</a>
+            <a href="./hotels.html">Otellər</a>
+            <a href="./transfer.html">Transfer xidmətləri</a>
+          </div>
+          <div class="subscribe">
+            <h3>Yeniliklərdən ilk xəbərdar olmaq<br> üçün abunə ol</h3>
+            <div class="email-subscribe">
+              <form class="subscribe-form">
+                  <div class="subscribe-btn">
+                      <input type="email" id="email" name="email" placeholder="E-mail ünvanını daxil et" required class="email">
+                      <button class="submitbutton">Abunə ol</button>
+                    </div>
+              </form>
+          </div>
+          
+        </div>
+        
+        
+        </div>
+        <img class="footer-img" src="../assets/images/footer.png"/>
+      </div>
+  </body>
+</html>

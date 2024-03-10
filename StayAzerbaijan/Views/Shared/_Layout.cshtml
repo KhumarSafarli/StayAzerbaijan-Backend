@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/main.css" />
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script defer src="../common/subscribe.js"></script>
+    <script defer src="../common/burger-menu.js"></script>
+    <script defer src="../common/book.js"></script>
+    <script defer src="../common/trending.js"></script>
+    <title>Stay Azerbaijan</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="left-side">
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="~/../assets/icons/logo2.png" />
+                        <div class="line"></div>
+                    </a>
+                        <a  asp-controller="Home" asp-action="Index" class="logo-text">Stay <br />Azerbaijan</a>
+                </div>
+                <div class="right-side">
+                    <div class="nav-items">
+                        <a asp-controller="Contact" asp-action="Contact" class="contact">Əlaqə</a>
+                        <a asp-controller="About" asp-action="About" class="about">Haqqımızda</a>
+                        <div class="currency">
+                            <select id="currency-select">
+                                <option value="AZN">AZN</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                        </div>
+
+                        <div class="daxil-ol">
+                            <img src="~/../assets/icons/login.svg" />
+                            <a asp-controller="Account" asp-action="Login" class="login"> Daxil ol</a>
+                        </div>
+                        <div class="register">
+                            <a asp-controller="Account" asp-action="Register" class="login"> Hesab yarat</a>
+                        </div>
+                    </div>
+                    <div class="burger-menu" id="burger-menu">
+                        <img src="~/../assets/icons/burger.svg" class="sidebar-icon" />
+                        <div class="nav-links">
+                            <a asp-controller="Contact" asp-action="Contact" class="contact">Əlaqə</a>
+                            <a href="./about.html" class="about">Haqqımızda</a>
+                            <a href="./login.html" class="login"> Daxil ol</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        @RenderBody()
+    <div class="footer">
+        <div class="footer-container">
+            <div class="logo-navigation">
+                <div class="logo">
+                    <a href="./home.html">
+                        <img src="~/../assets/icons/logo2.png" />
+                        <div class="line"></div>
+                    </a>
+                    <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+                </div>
+                <div class="slogan">
+                    <p class="slogan-text">Komfort və güvənli </br>istirahətin məkanı!</p>
+                </div>
+                <div class="social-media-icons">
+                    <a href="#"><img src="~/../assets/icons/linkedin.svg" /></a>
+                    <a href="#"><img src="~/../assets/icons/facebook.svg" /></a>
+                    <a href="#"><img src="~/../assets/icons/twitter.svg" /></a>
+                    <a href="#"><img src="~/../assets/icons/twoo.svg" /></a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>Məlumat</h3>
+                <a asp-controller="About" asp-action="About">Haqqımızda</a>
+                <a asp-controller="Contact" asp-action="Contact">Əlaqə</a>
+                <a asp-controller="Hotels" asp-action="Index">Otellər</a>
+                <a asp-controller="Transfer" asp-action="Index">Transfer xidmətləri</a>
+            </div>
+            <div class="subscribe">
+                <h3>Yeniliklərdən ilk xəbərdar olmaq<br> üçün abunə ol</h3>
+                <div class="email-subscribe">
+                    <form class="subscribe-form">
+                        <div class="subscribe-btn">
+                            <input type="email" id="email" name="email" placeholder="E-mail ünvanını daxil et" required class="email">
+                            <button class="submitbutton">Abunə ol</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+        <img class="footer-img" src="~/../assets/images/footer.png" />
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,34 @@
+.search-btn {
+  background-color: orange;
+  border-color: orange;
+  border: 2px solid orange;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 23px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: slideIn 1s ease-in-out;
+  @include slide-in-animation;
+  @include for-size(tablet) {
+    width: 300px;
+    height: 30px;
+    transform: translateY(-50px);
+  }
+  @include center-items;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.search-btn button {
+  border: none;
+  background-color: orange;
+  @include center-items;
+  cursor: pointer;
+}
+
+.search-btn button img {
+  width: 20px;
+}

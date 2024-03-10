@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="contact-us">
+    <div class="contact-container">
+        <div class="left">
+            <h2>Əlaqə üçün aşağıdakı </br>formu doldur:</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required placeholder="Ad">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Mesajını bura yaz..."></textarea>
+                </div>
+                <button type="submit" class="gonder">Göndər</button>
+            </form>
+        </div>
+        <div class="right">
+            <img src="../assets/images/callcentre.png" class="callcentre" />
+            <h3>#dardaqoymarıq</h3>
+            <h2>24/7 canlı dəstək</h2>
+            <p>Qaynar xətt: 140 <img src="../assets/icons/call.svg" class="call" /></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+.review-section {
+  width: 100%;
+  position: relative;
+  .travel {
+    position: absolute;
+    bottom: 0px;
+    @include for-size(tablet) {
+      display: none;
+    }
+  }
+
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  .review-container {
+    height: 600px;
+    background-color: rgb(237, 236, 236);
+    padding: 10px;
+    @include center-items;
+    justify-content: center;
+    flex-direction: column;
+
+    .header {
+      margin-top: 20px;
+      @include center-items;
+      flex-direction: column;
+      img {
+        width: 40px;
+      }
+      h5 {
+        color: #df6951;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      h1 {
+        color: #181e4b;
+        @include for-size(mobile) {
+          font-size: 20px;
+        }
+      }
+    }
+    .comment {
+      position: relative;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      img {
+        position: absolute;
+        top: -50px;
+      }
+      .profile {
+        @include for-size(mobile) {
+          width: 100px;
+        }
+      }
+      .review-comment {
+        margin-top: 60px;
+        @include for-size(mobile) {
+          margin-top: 10px;
+        }
+      }
+      .dirnag {
+        position: absolute;
+        left: 0px;
+        width: 100px;
+        @include for-size(mobile) {
+          width: 50px;
+          transform: translateY(30px);
+        }
+      }
+      @include center-items;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 60px;
+      gap: 10px;
+      width: 558px;
+      height: 279px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 17px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      @include for-size(mobile) {
+        width: 200px;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="login-section">
+    <div class="left">
+        <div class="header">
+            <h1>Daxil ol</h1>
+            <p>Xoş gəldin! Hesabına daxil ol, rezervasiyaya başla.</p>
+        </div>
+        <form class="submit-form" id="loginForm">
+            <div class="email">
+                <input type="email"
+                       id="email"
+                       placeholder="Email ünvanı"
+                       class="email-input"
+                       required />
+                <p class="error-message" id="emailError"></p>
+            </div>
+
+            <div class="password">
+                <input type="password"
+                       id="password"
+                       placeholder="Şifrə"
+                       class="password-input"
+                       required />
+                <p class="error-message" id="passwordError"></p>
+            </div>
+
+            <button type="submit" class="submit">Daxil ol</button>
+            <a asp-controller="Account" asp-action="Register">Hesabın yoxdur?O zaman elə indi yenisini yarat!</a>
+        </form>
+    </div>
+    <div class="right">
+        <img src="../assets/images/mobile.png" />
+    </div>
+</div>
+

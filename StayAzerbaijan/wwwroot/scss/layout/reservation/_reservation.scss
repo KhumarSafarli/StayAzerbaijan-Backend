@@ -1,0 +1,101 @@
+.reservation {
+  @include center-items;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  padding: 20px 10px;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  h4 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .reserve-box {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .hotel-map {
+      iframe {
+        margin-top: 30px;
+        width: 100%;
+        height: 200px;
+      }
+    }
+    .top {
+      @include center-items;
+      gap: 30px;
+      .room-img {
+        position: relative;
+        cursor: zoom-in;
+      }
+      @include for-size(tablet) {
+        flex-direction: column;
+      }
+
+      .zoom-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        width: 50px;
+      }
+
+      .room-img:hover .zoom-icon {
+        opacity: 0.5;
+      }
+
+      .zoomed {
+        transform: scale(2);
+        transition: transform 0.3s ease;
+        cursor: zoom-out;
+      }
+
+      p {
+        font-size: 14px;
+        @include center-items;
+        margin-bottom: 5px;
+      }
+      img {
+        width: 13px;
+        margin-right: 7px;
+      }
+
+      #hotel-img {
+        width: 400px;
+      }
+    }
+    .bottom {
+      padding: 0px 20px;
+      min-width: 375px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 500;
+      width: 400px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: rgb(0, 0, 106);
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+
+      #transfer-option {
+        border: 1px solid orange;
+        padding: 10px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .qeyd {
+        color: red;
+        font-size: 12px;
+      }
+    }
+  }
+}

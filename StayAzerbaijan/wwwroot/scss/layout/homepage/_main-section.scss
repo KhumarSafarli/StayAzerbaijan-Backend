@@ -1,0 +1,121 @@
+.main-section {
+  height: 100%;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+
+  .main-container {
+    @include center-items;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0px;
+
+    .banner {
+      position: relative;
+      background-color: white;
+      max-width: 1000px;
+      width: 100%;
+      padding: 10px;
+
+      @include center-items;
+      justify-content: center;
+      gap: 6px;
+      flex-direction: column;
+      img {
+        width: 40px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      h1 {
+        color: #382f80;
+        font-size: 60px;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 36px;
+        color: orange;
+        @include center-items;
+        gap: 15px;
+        img {
+          width: 20px;
+        }
+      }
+      p {
+        font-size: 20px;
+        color: #1c1743;
+      }
+      .line {
+        width: 90px;
+        height: 2px;
+        background-color: #1c1743;
+      }
+    }
+    .available-hotels {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      flex-direction: row;
+      gap: 10px;
+      padding: 20px;
+      height: 100%;
+      @include for-size(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include for-size(mobile) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .hotel-card {
+      display: flex;
+      background-image: url("../assets/images/hotel.png");
+      flex-direction: column;
+      gap: 180px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 11.995px;
+      width: 240.123px;
+      height: 311.986px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      position: relative;
+      &:hover {
+        transform: translateY(-20px);
+        .reserve-button {
+          opacity: 1;
+        }
+      }
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .person {
+          font-weight: 300;
+          font-size: 18px;
+        }
+      }
+      .hotel {
+        font-size: 24.99px;
+      }
+      .reserve-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #382f80ac;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}

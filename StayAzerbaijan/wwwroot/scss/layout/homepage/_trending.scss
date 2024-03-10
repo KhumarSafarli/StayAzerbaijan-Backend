@@ -1,0 +1,52 @@
+.trending-section {
+  height: auto;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  .headline {
+    margin-top: 100px;
+    @include center-items;
+    flex-direction: column;
+    img {
+      width: 40px;
+    }
+    h5 {
+      color: #df6951;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    h1 {
+      color: #181e4b;
+    }
+  }
+
+  .trend-hotels {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    transition: transform 0.5s ease-in-out;
+
+    .left,
+    .right {
+      position: relative;
+      width: 40px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include for-size(tablet) {
+        display: none;
+      }
+    }
+    .left[disabled],
+    .right[disabled] {
+      cursor: not-allowed;
+      opacity: 0.3;
+    }
+  }
+}

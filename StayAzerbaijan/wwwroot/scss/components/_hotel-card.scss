@@ -1,0 +1,81 @@
+.hotel-card {
+  display: none;
+  width: 270px;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .hotel-pic {
+    width: 268px;
+    height: 168px;
+    border-radius: 10px;
+  }
+  .location {
+    @include center-items;
+
+    gap: 10px;
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 15px;
+      fill: #181e4b;
+    }
+  }
+  .name-rating {
+    @include center-items;
+
+    justify-content: space-between;
+    .name {
+      h2 {
+        font-size: 17px;
+        color: #181e4b;
+      }
+    }
+    .rating {
+      @include center-items;
+      img {
+        width: 14px;
+      }
+    }
+  }
+  .price-tag {
+    @include center-items;
+    gap: 40px;
+    .price {
+      color: rgba(223, 105, 81, 1);
+      font-weight: 700;
+    }
+    .pax {
+      @include center-items;
+      gap: 6px;
+      img {
+        width: 10px;
+      }
+    }
+  }
+  .description {
+    margin-top: 10px;
+  }
+  button {
+    margin-top: 10px;
+    cursor: pointer;
+    @include center-items;
+    width: 134.897px;
+    height: 43.103px;
+    justify-content: flex-start;
+    padding: 20px 7px;
+    border-radius: 7.64px;
+    background: #df6951;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}

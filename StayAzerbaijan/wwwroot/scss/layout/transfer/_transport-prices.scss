@@ -1,0 +1,88 @@
+.prices-section {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  .price-header {
+    @include center-items;
+    justify-content: center;
+    h3 {
+      font-size: 32px;
+      color: orange;
+      font-weight: 400;
+    }
+  }
+  .cars-section {
+    @include center-items;
+    justify-content: center;
+    gap: 20px;
+    @include for-size(tablet) {
+      flex-direction: column;
+    }
+    .top {
+      @include center-items;
+      flex-direction: column;
+      gap: 10px;
+      .line {
+        width: 0px;
+        height: 1px;
+        background-color: orange;
+        visibility: hidden;
+        transition: width 0.4s ease-in-out;
+      }
+    }
+    .car-img {
+      width: 200px;
+      height: 100px;
+      margin-left: 30px;
+    }
+    .standart-car,
+    .business-car,
+    .viano-car,
+    .bus-car {
+      gap: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 310px;
+      border-radius: 10px;
+      background-color: rgba(128, 128, 128, 0.171);
+      transition: 0.3s;
+      cursor: pointer;
+      .price-icon,
+      .model {
+        width: 20px;
+      }
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .people-count,
+      .car-price,
+      .car-model {
+        @include center-items;
+        gap: 8px;
+        .people {
+          width: 15px;
+        }
+      }
+
+      .name {
+        font-weight: 600;
+      }
+    }
+  }
+  .cars-section .standart-car:hover .top .line,
+  .cars-section .business-car:hover .top .line,
+  .cars-section .viano-car:hover .top .line,
+  .cars-section .bus-car:hover .top .line {
+    visibility: visible;
+    width: 100px;
+  }
+}

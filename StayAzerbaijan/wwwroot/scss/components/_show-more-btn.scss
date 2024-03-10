@@ -1,0 +1,15 @@
+.show-more {
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  color: rgba(13, 0, 128, 0.84);
+  border-radius: 10px;
+  transition: 0.2s;
+  border: 2px solid rgba(124, 110, 255, 0.84);
+  &:hover {
+    border: 2px solid orange;
+  }
+}

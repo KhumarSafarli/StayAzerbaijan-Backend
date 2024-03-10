@@ -1,0 +1,158 @@
+.background {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  min-width: 375px;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+
+    img {
+      width: 160px;
+      height: auto;
+    }
+
+    h1,
+    h4 {
+      color: white;
+    }
+    h1 {
+      font-size: 48px;
+    }
+  }
+}
+
+.about-section {
+  width: 100%;
+  @include for-size(mobile) {
+    min-width: 375px;
+  }
+  .about-container {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    @include for-size(mobile) {
+      flex-direction: column;
+    }
+    .left {
+      width: 539px;
+      height: 380.416px;
+      @include for-size(mobile) {
+        width: 100%;
+      }
+      h5 {
+        color: orange;
+        font-size: 23px;
+      }
+      h3 {
+        color: #1c1743;
+        font-size: 33px;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+      img {
+        width: 40px;
+      }
+    }
+    .right {
+      position: relative;
+      @include for-size(mobile) {
+        display: none;
+      }
+      .ellipse {
+        width: 300px;
+        img {
+          position: absolute;
+        }
+        .first {
+          left: -50px;
+          width: 500px;
+          @include for-size(tablet) {
+            width: 300px;
+          }
+        }
+        .second {
+          width: 320px;
+          left: -10px;
+          top: -10px;
+        }
+
+        .third {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+.review-section {
+  .travel {
+    width: 300px;
+    position: absolute;
+  }
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .review {
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include center-items;
+      width: 558px;
+      height: 279px;
+      padding: 20px;
+      background-color: white;
+      justify-content: center;
+      border-radius: 17px;
+      margin-top: 20px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      @include for-size(mobile) {
+        width: 200px;
+        height: 100%;
+        flex-direction: column;
+      }
+      .customer,
+      .groups,
+      .corporates {
+        img {
+          width: 160px;
+        }
+        @include center-items;
+        flex-direction: column;
+        h3 {
+          font-size: 12px;
+        }
+      }
+
+      .text {
+        @include center-items;
+        gap: 60px;
+        h3 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/main.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script defer src="../common/subscribe.js"></script>
+    <script defer src="../common/burger-menu.js"></script>
+    <script defer src="../common/book.js"></script>
+    <script defer src="../common/trending.js"></script>
+    <title>Transfer xidmətləri</title>
+  </head>
+  <body>
+    <header>
+        <div class="navbar-container">
+          <div class="navbar">
+            <div class="left-side">
+              <a href="./home.html"
+                ><img src="../assets/icons/logo2.png" />
+                <div class="line"></div>
+              </a>
+              <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+            </div>
+            <div class="right-side">
+              <div class="nav-items">
+                <a href="./contact.html" class="contact">Əlaqə</a>
+                <a href="./about.html" class="about">Haqqımızda</a>
+                <div class="currency">
+                  <select id="currency-select">
+                      <option value="AZN">AZN</option>
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                    </select>
+                </div>
+  
+                <div class="daxil-ol">
+                  <img src="../assets/icons/login.svg" />
+                  <a href="./login.html" class="login"> Daxil ol</a>
+                </div>
+                <div class="register">
+                  <a href="#" class="login"> Hesab yarat</a>
+                </div>
+              </div>
+              <div class="burger-menu" id="burger-menu">
+                <img src="../assets/icons/burger.svg" class="sidebar-icon" />
+                <div class="nav-links">
+                  <a href="./contact.html" class="contact">Əlaqə</a>
+                  <a href="./about.html" class="about">Haqqımızda</a>
+                  <a href="./login.html" class="login"> Daxil ol</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="transport-section">
+        <div class="text-header">
+            <h5>#maşınbizdən</h5>
+            <h1>Transfer xidmətləri</h1>
+            <p>İstənilən istiqamətə və nəfər sayına uyğun </br> ən təhlükəsiz transferi bizdən əldə et.</p>
+        </div>
+       
+      </div>
+      <div class="prices-section">
+        <div class="price-header">
+            <h3>Qiymət və təkliflər:</h3>
+        </div>
+        <div class="cars-section">
+            <div class="standart-car">
+                <div class="top">
+                    <img src="../assets/images/hyundai.png" class="car-img"/>
+                    <p class="name">Standart</p>
+                    <div class="line"></div>
+                </div>
+               
+                <div class="people-count">
+                    <img src="../assets/icons/people.svg" class="people"/><p>Nəfər sayı: 2-4</p>
+                </div>
+                <div class="car-price">
+                    <img src="../assets/icons/price.svg" class="price-icon"/><p class="price">Gediş-dönüş: 100 ₼</p></div>
+                    <div class="car-model">
+                        <img src="../assets/icons/car.svg" class="model"/>
+                        <p class="model-name">Hyundai Accent (2018)</p>
+                    </div>
+            </div>
+            
+            <div class="business-car">
+                <div class="top">
+                    <img src="../assets/images/vipcar.png" class="car-img"/>
+                    <p class="name">Business</p>
+                    <div class="line"></div>
+                </div>
+                
+                <div class="people-count">
+                    <img src="../assets/icons/people.svg" class="people"/><p>Nəfər sayı: 2-4</p>
+                </div>
+                <div class="car-price">
+                    <img src="../assets/icons/price.svg" class="price-icon"/><p class="price">Gediş-dönüş: 320 ₼</p></div>
+                    <div class="car-model">
+                        <img src="../assets/icons/car.svg" class="model"/>
+                        <p class="model-name">Mercedes S class (2021)</p>
+                    </div>
+            </div>
+            <div class="viano-car">
+                <div class="top">
+                    <img src="../assets/images/viano.png" class="car-img"/>
+                    <p class="name">Viano</p>
+                    <div class="line"></div>
+                </div>
+                
+                <div class="people-count">
+                    <img src="../assets/icons/people.svg" class="people"/><p>Nəfər sayı: 6-8</p>
+                </div>
+                <div class="car-price">
+                    <img src="../assets/icons/price.svg" class="price-icon"/><p class="price">Gediş-dönüş: 200 ₼</p></div>
+                    <div class="car-model">
+                        <img src="../assets/icons/car.svg" class="model"/>
+                        <p class="model-name">Mercedes Viano (2018)</p>
+                    </div>
+            </div>
+            <div class="bus-car">
+                <div class="top">
+                    <img src="../assets/images/bus.png" class="car-img"/>
+                    <p class="name">Neoplan</p>
+                    <div class="line"></div>
+                </div>
+               
+                <div class="people-count">
+                    <img src="../assets/icons/people.svg" class="people"/><p>Nəfər sayı: 30-40</p>
+                </div>
+                <div class="car-price">
+                    <img src="../assets/icons/price.svg" class="price-icon"/><p class="price">Gediş-dönüş: 650 ₼</p></div>
+                    <div class="car-model">
+                        <img src="../assets/icons/car.svg" class="model"/>
+                        <p class="model-name">Neoplan (2020)</p>
+                    </div>
+            </div>
+        </div>
+      </div>
+      <div class="transfer-info">
+        <div class="info-container">
+            
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="logo-navigation">
+            <div class="logo">
+              <a href="./home.html"
+              ><img src="../assets/icons/logo2.png" />
+              <div class="line"></div>
+            </a>
+            <a href="./home.html" class="logo-text">Stay <br />Azerbaijan</a>
+            </div>
+            <div class="slogan">
+              <p class="slogan-text">Komfort və güvənli </br>istirahətin məkanı!</p>
+            </div>
+            <div class="social-media-icons">
+              <a href="#"><img src="../assets/icons/linkedin.svg"/></a>
+              <a href="#"><img src="../assets/icons/facebook.svg"/></a>
+              <a href="#"><img src="../assets/icons/twitter.svg"/></a>
+              <a href="#"><img src="../assets/icons/twoo.svg"/></a>
+            </div>
+          </div>
+          <div class="company">
+            <h3>Məlumat</h3>
+            <a href="./about.html">Haqqımızda</a>
+            <a href="./contact.html">Əlaqə</a>
+            <a href="./hotels.html">Otellər</a>
+            <a href="./transfer.html">Transfer xidmətləri</a>
+          </div>
+          <div class="subscribe">
+            <h3>Yeniliklərdən ilk xəbərdar olmaq<br> üçün abunə ol</h3>
+            <div class="email-subscribe">
+              <form class="subscribe-form">
+                  <div class="subscribe-btn">
+                      <input type="email" id="email" name="email" placeholder="E-mail ünvanını daxil et" required class="email">
+                      <button class="submitbutton">Abunə ol</button>
+                    </div>
+              </form>
+          </div>
+          
+        </div>
+        
+        
+        </div>
+        <img class="footer-img" src="../assets/images/footer.png"/>
+      </div>
+  </body>
+</html>

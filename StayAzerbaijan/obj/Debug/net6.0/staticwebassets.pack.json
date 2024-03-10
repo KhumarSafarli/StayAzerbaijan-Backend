@@ -1,0 +1,661 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\baby.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\baby.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\baggage.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\baggage.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\bed.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\bed.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\burger.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\burger.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\calendar.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\call.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\call.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\cancellation.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\cancellation.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\car.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\car.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\click.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\click.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\comment.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\comment.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\dirnag.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\dirnag.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\down.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\down.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\facebook.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\facebook.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\food.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\food.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\heart.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\hearteyes.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\hearteyes.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\hotel-building.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\hotel-building.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\hotel.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\hotel.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\hotelicon.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\hotelicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\house.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\house.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\landscape.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\landscape.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\left.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\left.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\linkedin.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\linkedin.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\location.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\location.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\login.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\login.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\logo2.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\logo3.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\logo3.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\moon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\moon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\password.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\password.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\pax.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\pax.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\people.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\people.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\person.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\person.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\price.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\price.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\right.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\right.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\star.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\star.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\twitter.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\twitter.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\twoo.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\twoo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\user.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\zoom-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\zoom-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\icons\\zoom.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\zoom.svg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\48.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\78.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\78.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\99.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\99.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\Ellipse.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Ellipse.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\aboutpage.png",
+      "PackagePath": "staticwebassets\\assets\\images\\aboutpage.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\background.png",
+      "PackagePath": "staticwebassets\\assets\\images\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bg-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bg-car.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg-car.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bg4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg4.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bizkimik.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bizkimik.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\brush.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brush.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bulvarhotel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bulvarhotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bulvarhotelslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bulvarhotelslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\bus.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bus.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\callcentre.png",
+      "PackagePath": "staticwebassets\\assets\\images\\callcentre.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\car-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\car-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\car-wall.png",
+      "PackagePath": "staticwebassets\\assets\\images\\car-wall.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\dashed.png",
+      "PackagePath": "staticwebassets\\assets\\images\\dashed.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\footer.png",
+      "PackagePath": "staticwebassets\\assets\\images\\footer.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\honeymoon.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\honeymoon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\hotel-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hotel-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\hotel-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\hotel-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\hotel-img.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\hotel-img.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\hotel.png",
+      "PackagePath": "staticwebassets\\assets\\images\\hotel.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\hotelroom.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\hotelroom.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\hyundai.png",
+      "PackagePath": "staticwebassets\\assets\\images\\hyundai.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\kids.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\kids.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\lankaran.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\lankaran.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\lankaransprings.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\lankaransprings.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\lankaranspringslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\lankaranspringslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\mariot.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\mariot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\mariotslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\mariotslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\marxal.png",
+      "PackagePath": "staticwebassets\\assets\\images\\marxal.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\marxalslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\marxalslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\mobile.png",
+      "PackagePath": "staticwebassets\\assets\\images\\mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\pikpalace.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pikpalace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\pikpalaceslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\pikpalaceslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\profilepic.png",
+      "PackagePath": "staticwebassets\\assets\\images\\profilepic.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\qalaalti.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\qalaalti.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\qalaaltislider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\qalaaltislider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\quba.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\quba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\qubapalace.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\qubapalace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\qubapalaceslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\qubapalaceslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\rectangle.png",
+      "PackagePath": "staticwebassets\\assets\\images\\rectangle.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\seashell.png",
+      "PackagePath": "staticwebassets\\assets\\images\\seashell.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\shamakhipalace.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shamakhipalace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\shamakhislider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shamakhislider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\standart-car.png",
+      "PackagePath": "staticwebassets\\assets\\images\\standart-car.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\travelpic.png",
+      "PackagePath": "staticwebassets\\assets\\images\\travelpic.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\viano.png",
+      "PackagePath": "staticwebassets\\assets\\images\\viano.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\video.mp4",
+      "PackagePath": "staticwebassets\\assets\\images\\video.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\vipcar.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vipcar.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\book.js",
+      "PackagePath": "staticwebassets\\common\\book.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\burger-menu.js",
+      "PackagePath": "staticwebassets\\common\\burger-menu.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\checkout.js",
+      "PackagePath": "staticwebassets\\common\\checkout.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\register.js",
+      "PackagePath": "staticwebassets\\common\\register.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\siderbar.js",
+      "PackagePath": "staticwebassets\\common\\siderbar.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\subscribe.js",
+      "PackagePath": "staticwebassets\\common\\subscribe.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\trending.js",
+      "PackagePath": "staticwebassets\\common\\trending.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Cinzel-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Cinzel-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\KaiseiHarunoUmi-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\KaiseiHarunoUmi-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\PlayfairDisplay-Black.otf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay-Black.otf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\PlayfairDisplay-Italic.otf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay-Italic.otf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\PlayfairDisplay-Regular.otf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay-Regular.otf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Ramadhan Karim.otf",
+      "PackagePath": "staticwebassets\\fonts\\Ramadhan Karim.otf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\fonts\\Vonique 64 Bold.otf",
+      "PackagePath": "staticwebassets\\fonts\\Vonique 64 Bold.otf"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\about.html",
+      "PackagePath": "staticwebassets\\pages\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\contact.html",
+      "PackagePath": "staticwebassets\\pages\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\home.html",
+      "PackagePath": "staticwebassets\\pages\\home.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\hotel-detail-page.html",
+      "PackagePath": "staticwebassets\\pages\\hotel-detail-page.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\hotels.html",
+      "PackagePath": "staticwebassets\\pages\\hotels.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\login.html",
+      "PackagePath": "staticwebassets\\pages\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\register.html",
+      "PackagePath": "staticwebassets\\pages\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\reservation.html",
+      "PackagePath": "staticwebassets\\pages\\reservation.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\search-results.html",
+      "PackagePath": "staticwebassets\\pages\\search-results.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\pages\\transfer.html",
+      "PackagePath": "staticwebassets\\pages\\transfer.html"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\base\\_reset.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\base\\_typography.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_contact-form.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_contact-form.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_hotel-card.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_hotel-card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_hotel-example-card.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_hotel-example-card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_room-example.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_room-example.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_search-button.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_search-button.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_show-more-btn.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_show-more-btn.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_subscribe-button.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_subscribe-button.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\about\\_aboutus.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\about\\_aboutus.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\contact\\_contactus.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\contact\\_contactus.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_footer.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_main-section.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_main-section.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_navbar.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_review-section.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_review-section.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_search-section.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_search-section.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_trending.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_trending.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\homepage\\_whyus.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\homepage\\_whyus.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\hotel-detail-page\\_amenities.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\hotel-detail-page\\_amenities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\hotel-detail-page\\_hotel-accomodation.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\hotel-detail-page\\_hotel-accomodation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\hotel-detail-page\\_hotel-details-section.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\hotel-detail-page\\_hotel-details-section.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\hotels\\_hotels-list.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\hotels\\_hotels-list.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\hotels\\_hotels-section.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\hotels\\_hotels-section.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\login\\_login.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\login\\_login.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\reservation\\_reservation.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\reservation\\_reservation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\search-results\\_search-results.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\search-results\\_search-results.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\signup\\_signup.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\signup\\_signup.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\transfer\\_transfer-info.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\transfer\\_transfer-info.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\transfer\\_transport-prices.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\transfer\\_transport-prices.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\layout\\transfer\\_transport-section.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\transfer\\_transport-section.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\main.css",
+      "PackagePath": "staticwebassets\\scss\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\utils\\_mixins.scss",
+      "PackagePath": "staticwebassets\\scss\\utils\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\utils\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\utils\\_variables.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.StayAzerbaijan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.StayAzerbaijan.props",
+      "PackagePath": "build\\StayAzerbaijan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.StayAzerbaijan.props",
+      "PackagePath": "buildMultiTargeting\\StayAzerbaijan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.StayAzerbaijan.props",
+      "PackagePath": "buildTransitive\\StayAzerbaijan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

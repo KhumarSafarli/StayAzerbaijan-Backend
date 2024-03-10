@@ -1,0 +1,36 @@
+.email-subscribe {
+  z-index: 100;
+  @include center-items;
+
+  form {
+    display: flex;
+    width: 100%;
+
+    .subscribe-btn {
+      display: flex;
+      position: relative;
+      #email {
+        padding: 10px;
+        width: 200px;
+        height: 40px;
+        border-right: none;
+        outline: none;
+        border: 1px solid orange;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+
+      .submitbutton {
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px solid orange;
+        background-color: orange;
+        transform: translateX(190px);
+      }
+    }
+  }
+}
