@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StayAzerbaijan.DAL;
+using StayAzerbaijan.Entities; 
 
 namespace StayAzerbaijan.Controllers
 {
-    public class TransferController:Controller
+    public class TransferController : Controller
     {
         private readonly ProductDbContext _context;
 
@@ -14,7 +15,8 @@ namespace StayAzerbaijan.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var transfers = _context.Transfers.ToList(); 
+            return View(transfers);
         }
     }
 }
