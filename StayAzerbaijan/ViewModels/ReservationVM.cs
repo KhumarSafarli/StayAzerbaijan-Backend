@@ -1,5 +1,6 @@
 ﻿using StayAzerbaijan.Entities;
 using StayAzerbaijan.Models;
+using System.Collections.Generic;
 
 namespace StayAzerbaijan.ViewModels
 {
@@ -7,7 +8,17 @@ namespace StayAzerbaijan.ViewModels
     {
         public Hotel Hotel { get; set; }
         public Room Room { get; set; }
+        public List<Room> Rooms { get; set; } 
+        public List<Hotel> FilteredHotels { get; set; }
         public List<MealType> MealTypes { get; set; }
-        public RoomDetailsVM RoomDetails { get; internal set; }
+        public RoomDetailsVM RoomDetails { get; set; }
+        public DateTime CheckInDate { get; internal set; }
+        public DateTime CheckOutDate { get; internal set; }
+        public int PaxCount { get; internal set; }
+        public int Nights { get; internal set; }
+        public int AdultCount { get; set; }
+        public int ChildCount { get; set; }
+        public decimal TotalPrice { get; set; }
+        public string SelectedRoomType { get; set; }
     }
 }

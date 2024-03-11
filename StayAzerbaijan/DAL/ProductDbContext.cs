@@ -17,7 +17,6 @@ namespace StayAzerbaijan.DAL
         public DbSet <CompanyInfo> CompanyInfos { get; set; }
         public DbSet<MealType> MealTypes { get; set; }
         public DbSet<HotelMealType> HotelMealTypes { get; set; }
-
-
+       
     }
 }

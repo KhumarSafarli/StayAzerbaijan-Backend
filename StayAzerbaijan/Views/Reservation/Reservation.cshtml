@@ -1,4 +1,4 @@
-﻿
+﻿@model StayAzerbaijan.ViewModels.ReservationVM
 @{
     ViewData["Title"] = "Reservation";
 }
@@ -49,13 +49,17 @@
 
             <div class="room-price-info">
                 <p class="hotel-name"><img src="../assets/icons/hotel-building.svg" />Otel: @Model.Hotel.Name </p>
-                <p class="room-type"><img src="../assets/icons/house.svg" />Otaq tipi: Deluxe Standart room</p>
-                <p class="bedroom"><img src="../assets/icons/bed.svg" />Yataq tipi: @Model.RoomDetails.BedType</p>
-                <p class="meal-type"><img src="../assets/icons/food.svg" /> Qidalanma: @Model.RoomDetails.MealType</p>
-                <p class="pax-number"><img src="../assets/icons/pax.svg" />Nəfər sayı: 2</p>
-                <p class="nights"><img src="../assets/icons/moon.svg" />Gecə sayı: 2</p>
-                <p class="date"><img src="../assets/icons/calendar.svg" />Tarixlər: 04.04-06.04.2023</p>
-                <p class="landscape"><img src="../assets/icons/landscape.svg" />Mənzərə: @Model.RoomDetails.Landscape</p>
+                <p class="room-type"><img src="../assets/icons/house.svg" />Otaq tipi: @Model.SelectedRoomType</p>
+                <p class="bed-type"><img src="../assets/icons/bed.svg" />Yataq tipi: @Model.Room.BedType</p>
+                <p class="meal-type" style="
+                   padding: 0;
+                   border: NONE;
+                   display: flex;
+                   flex-direction: row;"><img src="../assets/icons/food.svg" /> Qidalanma: BB</p>
+                <p class="pax-number"><img src="../assets/icons/pax.svg" />Nəfər sayı: @Model.PaxCount</p>
+                <p class="nights"><img src="../assets/icons/moon.svg" />Gecə sayı: @Model.CheckOutDate.Subtract(Model.CheckInDate).Days</p>
+                <p class="date"><img src="../assets/icons/calendar.svg" />Tarixlər: @Model.CheckInDate.ToShortDateString() - @Model.CheckOutDate.ToShortDateString()</p>
+                <p class="landscape"><img src="../assets/icons/landscape.svg" />Mənzərə: @Model.Room.Landscape</p>
                 <p class="cancellation-policy"><img src="../assets/icons/cancellation.svg" />Ləğv etmə: Bu rezervasiya ləğv edilmir. </p>
             </div>
 
@@ -122,8 +126,9 @@
                             </li>
                             <li class="list-group-item d-flex justify-content-between">
                                 <span>Toplam (AZN)</span>
-                                <strong>₼520</strong>
+                                <strong>@Model.TotalPrice.ToString("C", new System.Globalization.CultureInfo("az-AZ"))</strong>
                             </li>
+
                         </ul>
                         <form class="card p-2">
                             <div class="input-group">

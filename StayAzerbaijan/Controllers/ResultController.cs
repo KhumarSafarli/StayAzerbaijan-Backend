@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using StayAzerbaijan.DAL;
 using StayAzerbaijan.Entities;
+using StayAzerbaijan.Models;
 using StayAzerbaijan.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,6 @@ namespace StayAzerbaijan.Controllers
 
         public IActionResult SearchResult(string city, DateTime checkInDate, DateTime checkOutDate, int adultCount, int childCount)
         {
-   
             int totalGuests = adultCount + childCount;
             var filteredHotels = _context.Hotels
                 .Where(h => h.Location.Contains(city) || h.Name.Contains(city))
@@ -42,17 +42,19 @@ namespace StayAzerbaijan.Controllers
                 })
                 .ToList();
 
-          
             var model = new SearchResultViewModel
             {
                 FilteredHotels = filteredHotels,
                 CheckInDate = checkInDate,
                 CheckOutDate = checkOutDate,
                 AdultCount = adultCount,
-                ChildCount = childCount
+                ChildCount = childCount,
+                RoomDetails = new RoomDetailsVM() 
             };
 
             return View(model);
         }
+
+
     }
 }

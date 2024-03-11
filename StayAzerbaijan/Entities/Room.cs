@@ -12,6 +12,7 @@
             public int Capacity { get; set; }
         public int Size { get; set; }
            public ICollection<RoomImage> RoomImages { get; set; }
+     
     }
     }
 
