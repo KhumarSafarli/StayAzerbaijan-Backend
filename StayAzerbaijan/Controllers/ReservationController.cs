@@ -1,10 +1,9 @@
-﻿using StayAzerbaijan.DAL;
-using StayAzerbaijan.Entities;
+﻿using StayAzerbaijan.Entities;
 using StayAzerbaijan.Models;
 using StayAzerbaijan.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
+using StayAzerbaijan.DAL;
 using System.Linq;
 
 namespace StayAzerbaijan.Controllers
@@ -18,7 +17,8 @@ namespace StayAzerbaijan.Controllers
             _context = context;
         }
 
-        public IActionResult Reservation(int hotelId, DateTime checkInDate, DateTime checkOutDate, int roomId, int paxCount, int nights, int adultCount, int childCount, string transferOption)
+        [HttpGet]
+        public IActionResult Reservation(int hotelId, DateTime checkInDate, DateTime checkOutDate, int roomId, int paxCount, int nights, int adultCount, int childCount, string promoCode)
         {
             var hotel = _context.Hotels
                 .Include(h => h.Rooms)
@@ -32,23 +32,25 @@ namespace StayAzerbaijan.Controllers
             }
 
             var room = hotel.Rooms.FirstOrDefault(r => r.Id == roomId);
+            decimal totalPrice = room != null ? room.Price * nights : 0;
+            var mealTypes = hotel.HotelMealTypes.Select(ht => ht.MealType).ToList();
 
-            decimal transferPrice = 0;
-            if (transferOption != "no-transfer")
+            var appliedPromoCode = string.IsNullOrEmpty(promoCode) ? null : _context.Promocodes.FirstOrDefault(pc => pc.Code == promoCode);
+
+            if (appliedPromoCode != null)
             {
-                var selectedTransfer = _context.Transfers.FirstOrDefault(t => t.Name == transferOption);
-                if (selectedTransfer != null)
-                {
-                    transferPrice = selectedTransfer.Price;
-                }
+                totalPrice -= appliedPromoCode.DiscountAmount;
             }
-
-            decimal totalPrice = room != null ? room.Price * nights + transferPrice : transferPrice;
 
             var model = new ReservationVM
             {
                 Hotel = hotel,
                 Room = room,
+                MealTypes = mealTypes,
+                RoomDetails = new RoomDetailsVM
+                {
+                    Room = room,
+                },
                 CheckInDate = checkInDate,
                 CheckOutDate = checkOutDate,
                 PaxCount = paxCount,
@@ -56,10 +58,30 @@ namespace StayAzerbaijan.Controllers
                 AdultCount = adultCount,
                 ChildCount = childCount,
                 TotalPrice = totalPrice,
-                SelectedRoomType = room != null ? room.Name : ""
+                SelectedRoomType = room != null ? room.Name : "",
+                PromoCode = promoCode,
+                PromoCodeDiscount = appliedPromoCode != null ? appliedPromoCode.DiscountAmount : 0,
+                Promocodes = _context.Promocodes.ToList()  
             };
 
             return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult ApplyPromoCode(string promoCode)
+        {
+           
+            var appliedPromoCode = _context.Promocodes.FirstOrDefault(pc => pc.Code == promoCode);
+
+            if (appliedPromoCode != null)
+            {
+                
+                return Json(appliedPromoCode.DiscountAmount);
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }

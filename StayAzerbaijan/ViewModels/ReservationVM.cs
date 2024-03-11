@@ -20,5 +20,8 @@ namespace StayAzerbaijan.ViewModels
         public int ChildCount { get; set; }
         public decimal TotalPrice { get; set; }
         public string SelectedRoomType { get; set; }
+        public string PromoCode { get; set; }
+        public decimal PromoCodeDiscount { get; set; }
+        public List<Promocode> Promocodes { get; set; }
     }
 }

@@ -117,28 +117,26 @@
                         </h4>
                         <ul class="list-group mb-3 sticky-top">
 
-                            <li class="list-group-item d-flex justify-content-between bg-light">
-                                <div class="text-success">
-                                    <h6 class="my-0">Promokod</h6>
-                                    <small>TEST</small>
-                                </div>
-                                <span class="text-success">-₼5</span>
-                            </li>
+                          
                             <li class="list-group-item d-flex justify-content-between">
-                                <span>Toplam (AZN)</span>
+                                <span>Toplam:</span>
                                 <strong id="total-price">@Model.TotalPrice.ToString("C", new System.Globalization.CultureInfo("az-AZ"))</strong>
                             </li>
 
 
                         </ul>
-                        <form class="card p-2">
+                        <form class="card p-2" asp-action="Reservation" asp-controller="Reservation" method="get">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Promokod">
+                                <input type="text" class="form-control" placeholder="Promokod" name="promoCode" id="promo-code-input">
+
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn btn-secondary">Tətbiq et</button>
+                                    <button id="apply-promo-code-btn" type="button" class="btn btn-secondary">Tətbiq et</button>
                                 </div>
                             </div>
                         </form>
+
+
+
                     </div>
                     <div class="col-md-8 order-md-1">
                         <form class="needs-validation" novalidate="">
@@ -206,38 +204,70 @@
         </div>
 
     </div>
-</div>
-
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const transferOptionSelect = document.getElementById('transfer-option');
-        const totalPriceElement = document.getElementById('total-price');
-        function updateTotalPrice() {
-            const selectedTransferOption = transferOptionSelect.value;
-            let totalPrice = parseFloat('@Model.TotalPrice');
-            switch (selectedTransferOption) {
-                case 'standard':
-                    totalPrice += 10; 
-                    break;
-                case 'business':
-                    totalPrice += 20; 
-                    break;
-                case 'viano':
-                    totalPrice += 30; 
-                    break;
-                case 'neoplan':
-                    totalPrice += 40; 
-                    break;
-                default:
-                  
-                    break;
+        document.addEventListener('DOMContentLoaded', function () {
+            const transferOptionSelect = document.getElementById('transfer-option');
+            const totalPriceElement = document.getElementById('total-price');
+            const promoCodeInput = document.getElementById('promo-code-input');
+            const applyPromoCodeBtn = document.getElementById('apply-promo-code-btn');
+            let promoCodeApplied = false; 
+            function updateTotalPrice() {
+                const selectedTransferOption = transferOptionSelect.value;
+                let totalPrice = parseFloat('@Model.TotalPrice');
+                switch (selectedTransferOption) {
+                    case 'standard':
+                        totalPrice += 100;
+                        break;
+                    case 'business':
+                        totalPrice += 320;
+                        break;
+                    case 'viano':
+                        totalPrice += 200;
+                        break;
+                    case 'neoplan':
+                        totalPrice += 600;
+                        break;
+                    default:
+                        break;
+                }
+
+                totalPriceElement.textContent = totalPrice.toFixed(2) + ' AZN';
             }
+            transferOptionSelect.addEventListener('change', updateTotalPrice);
 
-            totalPriceElement.textContent = totalPrice.toFixed(2) + ' AZN';
-        }
+            applyPromoCodeBtn.addEventListener('click', function () {
+                const promoCode = promoCodeInput.value.trim();
+                if (promoCode !== '' && !promoCodeApplied) {
+                
+                    fetch(`/Reservation/ApplyPromoCode?promoCode=${promoCode}`)
+                        .then(response => {
+                            if (response.ok) {
+                              
+                                response.json().then(discountAmount => {
+                          
+                                    let totalPrice = parseFloat(totalPriceElement.textContent);
 
-        transferOptionSelect.addEventListener('change', updateTotalPrice);
+                                    totalPrice -= discountAmount;
+                                    totalPriceElement.textContent = totalPrice.toFixed(2) + ' AZN';
 
-        updateTotalPrice();
-    });
+                                    promoCodeApplied = true;
+                                });
+                            } else {
+                                alert('Belə promokod mövcud deyil.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            alert('An error occurred while processing your request. Please try again.');
+                        });
+                } else if (promoCodeApplied) {
+                    alert('Bu promokod artıq istifadə olunub.');
+                } else {
+                    alert('Zəhmət olmasa promokodu daxil edin.');
+                }
+            });
+            updateTotalPrice();
+        });
+
 </script>
+
