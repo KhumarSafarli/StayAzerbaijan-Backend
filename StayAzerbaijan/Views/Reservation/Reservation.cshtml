@@ -93,10 +93,10 @@
                             <option value="business">Business</option>
                             <option value="viano">Viano</option>
                             <option value="neoplan">Neoplan</option>
-
                         </select>
                         <p class="qeyd">*Qeyd: Rezervasiyanız təsdiqləndikdən sonra transfer sizinlə əlaqə saxlayaraq, pickup ünvanını dəqiqləşdirəcək.</p>
                     </div>
+
 
                 </form>
             </div>
@@ -126,8 +126,9 @@
                             </li>
                             <li class="list-group-item d-flex justify-content-between">
                                 <span>Toplam (AZN)</span>
-                                <strong>@Model.TotalPrice.ToString("C", new System.Globalization.CultureInfo("az-AZ"))</strong>
+                                <strong id="total-price">@Model.TotalPrice.ToString("C", new System.Globalization.CultureInfo("az-AZ"))</strong>
                             </li>
+
 
                         </ul>
                         <form class="card p-2">
@@ -206,3 +207,37 @@
 
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const transferOptionSelect = document.getElementById('transfer-option');
+        const totalPriceElement = document.getElementById('total-price');
+        function updateTotalPrice() {
+            const selectedTransferOption = transferOptionSelect.value;
+            let totalPrice = parseFloat('@Model.TotalPrice');
+            switch (selectedTransferOption) {
+                case 'standard':
+                    totalPrice += 10; 
+                    break;
+                case 'business':
+                    totalPrice += 20; 
+                    break;
+                case 'viano':
+                    totalPrice += 30; 
+                    break;
+                case 'neoplan':
+                    totalPrice += 40; 
+                    break;
+                default:
+                  
+                    break;
+            }
+
+            totalPriceElement.textContent = totalPrice.toFixed(2) + ' AZN';
+        }
+
+        transferOptionSelect.addEventListener('change', updateTotalPrice);
+
+        updateTotalPrice();
+    });
+</script>
