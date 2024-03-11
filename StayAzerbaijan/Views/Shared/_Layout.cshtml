@@ -98,7 +98,7 @@
             <div class="subscribe">
                 <h3>Yeniliklərdən ilk xəbərdar olmaq<br> üçün abunə ol</h3>
                 <div class="email-subscribe">
-                    <form class="subscribe-form">
+                    <form class="subscribe-form" method="post" action="/Subscribe/Subscribe">
                         <div class="subscribe-btn">
                             <input type="email" id="email" name="email" placeholder="E-mail ünvanını daxil et" required class="email">
                             <button class="submitbutton">Abunə ol</button>
@@ -113,5 +113,7 @@
         <img class="footer-img" src="~/../assets/images/footer.png" />
     </div>
     @RenderSection("Scripts", required: false)
+
+
 </body>
 </html>

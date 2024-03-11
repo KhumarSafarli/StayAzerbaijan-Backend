@@ -3,7 +3,7 @@
     ViewData["Title"] = "Index";
 }
 
-<body>
+
    
     <div class="sub-bar-container">
         <div class="sub-bar">
@@ -32,69 +32,70 @@
         </div>
 
         <div class="booking-box">
-            <div class="form" style="
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-">
-                <div class="booking-container">
-                    <div class="city">
-                        <img src="/../assets/icons/location.svg">
-                        <label for="city">İstiqamət:</label>
-                        <input type="text" class="location" id="city" name="city" placeholder="Şəhər/Otel adı">
-                    </div>
-                    <div class="check-in">
-                        <img src="/../assets/icons/calendar.svg">
-                        <label for="check-in">Giriş:</label>
-                        <input type="text" id="check-in" name="check-in" class="custom-calendar flatpickr-input" readonly="readonly">
-                    </div>
+            <div class="form" style="gap: 30px; display: flex; flex-direction: column; align-items: center;">
+            <form asp-controller="Result" asp-action="Searchresult" method="get" onsubmit="populateDatesAndCounts()" style="gap: 30px;display: flex;flex-direction: column;align-items: center;">
+                    <div class="booking-container">
+                        <div class="city">
+                            <img src="/../assets/icons/location.svg">
+                            <label for="city">İstiqamət:</label>
+                            <input type="text" class="location" id="city" name="city" placeholder="Şəhər/Otel adı">
+                        </div>
+                        <div class="check-in">
+                            <img src="/../assets/icons/calendar.svg">
+                            <label for="check-in">Giriş:</label>
+                            <input type="text" id="check-in" name="check-in" class="custom-calendar flatpickr-input" readonly="readonly">
+                        </div>
+                        <div class="check-out">
+                            <img src="/../assets/icons/calendar.svg">
+                            <label for="check-out">Çıxış:</label>
+                            <input type="text" id="check-out" name="check-out" class="flatpickr-input" readonly="readonly">
+                        </div>
+                        <div class="pax">
+                            <img src="/../assets/icons/person.svg">
+                            <label for="guests">Böyük:</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="0">0</option>
+                            </select>
+                        </div>
+                        <div class="pax">
+                            <img src="/../assets/icons/baby.svg">
+                            <label for="children">Uşaq:</label>
+                            <select id="children" name="children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                    <input type="hidden" id="checkInDate" name="checkInDate" />
+                    <input type="hidden" id="checkOutDate" name="checkOutDate" />
+                    <input type="hidden" id="adultCount" name="adultCount" />
+                    <input type="hidden" id="childCount" name="childCount" />
 
-                    <div class="check-out">
-                        <img src="/../assets/icons/calendar.svg">
-                        <label for="check-out">Çıxış:</label>
-                        <input type="text" id="check-out" name="check-out" class="flatpickr-input" readonly="readonly">
                     </div>
-                    <div class="pax">
-                        <img src="/../assets/icons/person.svg">
-                        <label for="guests">Böyük:</label>
-                        <select id="guests" name="guests">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="0">0</option>
-                        </select>
+                    <div class="search-btn">
+                        <button type="submit"><img src="/../assets/icons/search.svg"></button>
                     </div>
-                    <div class="pax">
-                        <img src="/../assets/icons/baby.svg">
-                        <label for="children">Uşaq:</label>
-                        <select id="guests" name="guests">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="search-btn">
-                    <button type="submit"><img src="/../assets/icons/search.svg"></button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
+
     <div class="main-section">
         <div class="main-container">
             <div class="banner">
@@ -182,8 +183,11 @@
 
                         <p class="pax" style="font-size:12px;"> <img src="~/../assets/icons/user.svg" />2 nəfər</p>
                     </div>
-                  
-                    <button class="etrafli">Ətraflı</button>
+
+                    <form asp-controller="Detail" asp-action="Index" method="post">
+                        <input type="hidden" name="id" value="@hotel.Id" />
+                        <button type="submit" class="etrafli">Ətraflı</button>
+                    </form>
                 </div>
             }
             <button class="right"><img src="~/../assets/icons/right.svg" /></button>
@@ -206,7 +210,18 @@
         </div>
         <img class="travel" src="~/../assets/images/travelpic.png" />
     </div>
-   
 
-</body>
-</html>
+
+<script>
+    function populateDatesAndCounts() {
+        var checkInDate = document.getElementById("check-in").value;
+        var checkOutDate = document.getElementById("check-out").value;
+        var adultCount = document.getElementById("guests").value;
+        var childCount = document.getElementById("children").value;
+        document.getElementById("checkInDate").value = checkInDate;
+        document.getElementById("checkOutDate").value = checkOutDate;
+        document.getElementById("adultCount").value = adultCount;
+        document.getElementById("childCount").value = childCount;
+    }
+</script>
+
