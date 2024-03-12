@@ -108,21 +108,30 @@
 
 
             </div>
-            <div class="available-hotels">
-                @foreach (var hotel in Model.Hotels.Where(h => h.IsAvailableOnWeekend))
-                {
-                    <div class="hotel-card" style="background-image: url('~/../assets/images/@hotel.MainImgUrl'); background-size: cover;">
-                        <div class="top">
-                            <h2 class="person">2 nəfər</h2>
-                            <h3 class="price">₼ @hotel.Price</h3>
-                        </div>
-                        <div class="hotel-name">
-                            <h4 class="hotel">@hotel.Name</h4>
-                        </div>
-                        <a asp-controller="Reservation" asp-action="Reservation" asp-route-hotelId="@hotel.Id" class="reserve-button">Rezervasiya et</a>
+       <div class="available-hotels">
+    @foreach (var hotel in Model.Hotels.Where(h => h.IsAvailableOnWeekend))
+            {
+                
+        <div class="hotel-card" style="background-image: url('~/../assets/images/@hotel.MainImgUrl'); background-size: cover;">
+            <div class="top">
+                <h2 class="person">2 nəfər</h2>
+                <h3 class="price">₼ @hotel.Price</h3>
+            </div>
+            <div class="hotel-name">
+                <h4 class="hotel">@hotel.Name</h4>
+            </div>
+                    @{
+                        DayOfWeek today = DateTime.Today.DayOfWeek;
+                        int daysUntilNextFriday = ((int)DayOfWeek.Friday - (int)today + 7) % 7;
+                        DateTime nextFriday = DateTime.Today.AddDays(daysUntilNextFriday);
+                        DateTime nextSunday = nextFriday.AddDays(2);
+                    }
 
-                    </div>
-                }
+                    <a href="~/Weekend/Index?hotelId=@hotel.Id&checkInDate=@nextFriday.ToString("yyyy-MM-dd")&checkOutDate=@nextSunday.ToString("yyyy-MM-dd")&roomId=2&paxCount=2" class="reserve-button">Rezervasiya et</a>
+
+        </div>
+    }
+                
             </div>
         </div>
     </div>

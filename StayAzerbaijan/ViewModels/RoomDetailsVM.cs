@@ -10,5 +10,6 @@ namespace StayAzerbaijan.Models
         public string Landscape { get; set; }
         public string MealType { get; set; }
         public string RoomType { get; internal set; }
+        public int RoomId { get; internal set; }
     }
 }
