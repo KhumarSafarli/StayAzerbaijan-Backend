@@ -18,6 +18,8 @@ namespace StayAzerbaijan.DAL
         public DbSet<MealType> MealTypes { get; set; }
         public DbSet<HotelMealType> HotelMealTypes { get; set; }
         public DbSet<Promocode> Promocodes { get; set; }
-       
+        public DbSet<CustomUser> CustomUsers { get; set; }
+        public DbSet<Message> Messages { get; set; }
+
     }
 }

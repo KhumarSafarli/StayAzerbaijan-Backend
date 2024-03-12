@@ -41,6 +41,11 @@ namespace StayAzerbaijan.Controllers
                     Rooms = h.Rooms.Where(r => r.Capacity >= totalGuests).ToList()
                 })
                 .ToList();
+            if (!filteredHotels.Any())
+            {
+               
+                return RedirectToAction("Index", "Home");
+            }
 
             var model = new SearchResultViewModel
             {

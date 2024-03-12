@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using StayAzerbaijan.DAL;
+using StayAzerbaijan.Entities;
+using StayAzerbaijan.Models;
 
 namespace StayAzerbaijan.Controllers
 {
-    public class ContactController:Controller
+    public class ContactController : Controller
     {
         private readonly ProductDbContext _context;
 
@@ -16,5 +19,32 @@ namespace StayAzerbaijan.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult SendMessage(string name, string email, string message)
+        {
+            if (ModelState.IsValid)
+            {
+              
+                var newMessage = new Message
+                {
+                    Name = name,
+                    Email = email,
+                    Content = message,
+                    SentAt = DateTime.Now
+                };
+
+                _context.Messages.Add(newMessage);
+                _context.SaveChanges();
+
+             
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View("Contact");
+            }
+        }
+
     }
 }

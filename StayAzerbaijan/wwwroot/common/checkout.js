@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
   var image = document.getElementById("hotel-img");
 
   image.addEventListener("click", function () {
@@ -22,10 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!firstName || !lastName || !passportNumber || !phoneNumber) {
       showToast("Please fill out all the required fields.");
     } else {
-      reservationForm.submit();
-    }
+          showPaymentSuccessModal(); 
+      }
   });
-});
+
+    function showPaymentSuccessModal() {
+      
+        var modal = new bootstrap.Modal(document.getElementById('paymentSuccessModal'));
+        modal.show();
+    }
 
 function showToast(message) {
   Toastify({

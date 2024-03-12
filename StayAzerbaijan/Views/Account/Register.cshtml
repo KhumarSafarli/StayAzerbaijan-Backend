@@ -1,4 +1,4 @@
-﻿
+﻿@model StayAzerbaijan.ViewModels.RegisterViewModel
 @{
     ViewData["Title"] = "Register";
 }
@@ -8,55 +8,32 @@
             <h1>Hesab yarat</h1>
             <p>Xoş gəldin! Yeni hesab yarat, rezervasiyaya başla.</p>
         </div>
-        <form class="submit-form">
+        <form method="post" asp-controller="Account" asp-action="Register" class="submit-form">
             <div class="name">
-
-                <input type="text"
-                       id="firstname"
-                       placeholder="Ad"
-                       class="firstname"
-                       required />
+                <input type="text" id="firstname" asp-for="Firstname" placeholder="Ad" class="firstname" required />
                 <p class="error-message"></p>
-
             </div>
 
             <div class="surname">
-                <input type="text"
-                       id="lastname"
-                       placeholder="Soyad"
-                       class="lastname"
-                       required />
+                <input type="text" id="lastname" asp-for="Surname" placeholder="Soyad" class="lastname" required />
                 <p class="error-message"></p>
             </div>
 
             <div class="email">
-
-                <input type="email"
-                       id="email"
-                       placeholder="Email ünvanı"
-                       class="email-input"
-                       required />
+                <input type="email" id="email1" asp-for="Email" placeholder="Email ünvanı" class="email-input" required />
                 <p class="error-message"></p>
             </div>
 
             <div class="password">
-
-                <input type="password"
-                       id="password"
-                       placeholder="Şifrə"
-                       class="password-input"
-                       required />
-
+                <input type="password" id="password" asp-for="Password" placeholder="Şifrə" class="password-input" required />
                 <p class="error-message"></p>
             </div>
+
             <div class="confirm-password">
-                <input type="password"
-                       id="confirmPassword"
-                       placeholder="Şifrəni təkrarla"
-                       class="confirm-password"
-                       required />
+                <input type="password" id="confirmPassword" asp-for="ConfirmPassword" placeholder="Şifrəni təkrarla" class="confirm-password" required />
                 <p class="error-message"></p>
             </div>
+
             <div class="password-validation-box" id="password-validation-box">
                 <h5> Şifrə qeyd olunan qaydalara riayət etməlidir:</h5>
                 <p id="lowercase" class="invalid">Kiçik hərf</p>

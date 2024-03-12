@@ -63,7 +63,7 @@
                                 <option value="7">7</option>
                                 <option value="8">8</option>
                                 <option value="9">9</option>
-                                <option value="0">0</option>
+                                <option value="10">10</option>
                             </select>
                         </div>
                         <div class="pax">
@@ -122,12 +122,14 @@
             </div>
                     @{
                         DayOfWeek today = DateTime.Today.DayOfWeek;
-                        int daysUntilNextFriday = ((int)DayOfWeek.Friday - (int)today + 7) % 7;
-                        DateTime nextFriday = DateTime.Today.AddDays(daysUntilNextFriday);
-                        DateTime nextSunday = nextFriday.AddDays(2);
+                        int daysUntilNextSaturday = ((int)DayOfWeek.Saturday - (int)today + 7) % 7;
+                        DateTime nextSaturday = DateTime.Today.AddDays(daysUntilNextSaturday);
+                        DateTime nextSunday = nextSaturday.AddDays(1);
+                        string dateRange = $"{nextSaturday.ToShortDateString()} - {nextSunday.ToShortDateString()}";
+
                     }
 
-                    <a href="~/Weekend/Index?hotelId=@hotel.Id&checkInDate=@nextFriday.ToString("yyyy-MM-dd")&checkOutDate=@nextSunday.ToString("yyyy-MM-dd")&roomId=2&paxCount=2" class="reserve-button">Rezervasiya et</a>
+                    <a href="~/Weekend/Index?hotelId=@hotel.Id&checkInDate=@nextSaturday.ToString("yyyy-MM-dd")&checkOutDate=@nextSunday.ToString("yyyy-MM-dd")&roomId=2&paxCount=2" class="reserve-button">Rezervasiya et</a>
 
         </div>
     }
@@ -231,6 +233,34 @@
         document.getElementById("checkOutDate").value = checkOutDate;
         document.getElementById("adultCount").value = adultCount;
         document.getElementById("childCount").value = childCount;
+    }
+    function validateForm(event) {
+        if (!isInputSelected('city') || !isInputSelected('check-in') || !isInputSelected('check-out') || !isInputSelected('guests') || !isInputSelected('children')) {
+            event.preventDefault(); 
+            window.location.href = "/";
+            return false;
+        }
+
+        var checkInDate = new Date(document.getElementById("check-in").value);
+        var checkOutDate = new Date(document.getElementById("check-out").value);
+        var today = new Date();
+
+        if (checkInDate <= today || checkOutDate <= today || checkOutDate <= checkInDate) {
+            event.preventDefault();
+            alert("Please select valid check-in and check-out dates.");
+            return false; 
+        }
+
+        return true; 
+    }
+
+    function isInputSelected(id) {
+        
+        var input = document.getElementById(id);
+        if (input.value.trim() === '') {
+            return false; 
+        }
+        return true; 
     }
 </script>
 
