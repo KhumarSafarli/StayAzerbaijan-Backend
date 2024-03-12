@@ -1,0 +1,66 @@
+﻿@using StayAzerbaijan.Areas.Admin.ViewModels
+@model CreateHotelVM
+
+<div style="margin-left:50px; margin-top:10px;">
+    <h2 style="
+        display: flex;
+        align-items: center;
+        justify-content: center;color:#2d3f62;">
+        Create Hotel
+    </h2>
+    <form method="post" enctype="multipart/form-data" style="display:flex; flex-direction:column; gap:10px;">
+        <div asp-validation-summary="All" class="alert alert-danger"></div>
+        <div>
+            <label asp-for="MainPhoto">Hotel Image</label>
+            <input asp-for="MainPhoto" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="PricePerNight"> Price per night</label>
+            <input asp-for="PricePerNight" class="form-control" type="number" step="0.01" />
+            <span asp-validation-for="PricePerNight" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="CategoryIds">Select category</label>
+            <select asp-for="CategoryIds" asp-items="@(new SelectList(Model.Categories, "Id", "Name"))" class="form-control" multiple>
+            </select>
+            <span asp-validation-for="CategoryIds" class="text-danger"></span>
+        </div>
+
+
+        <div>
+            <label asp-for="Location"></label>
+            <input asp-for="Location" class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Star">Star Rating</label>
+            <select asp-for="Star" class="form-control">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+        </div><div>
+            <label asp-for="SliderPhoto">Slider Image</label>
+            <input asp-for="SliderPhoto" class="form-control" />
+        </div>
+
+        <div>
+            <label asp-for="IsAvailableOnWeekend">Available on Weekend</label>
+            <input asp-for="IsAvailableOnWeekend" type="checkbox" class="form-check-input" />
+        </div>
+
+        <div>
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" rows="5" cols="60" class="form-control"></textarea>
+        </div>
+       
+        <div class="mt-2">
+            <button type="submit" class="btn btn-outline-success">Create</button>
+        </div>
+    </form>
+</div>

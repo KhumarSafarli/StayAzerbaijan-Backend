@@ -1,12 +1,12 @@
 ﻿﻿
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Majestic Admin</title>
+    <title>StayAzerbaijan Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="~/admin/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="~/admin/vendors/base/vendor.bundle.base.css">
@@ -19,15 +19,15 @@
     <!-- endinject -->
     <link rel="shortcut icon" href="~/admin/images/favicon.png" />
 </head>
-<body>
+<body >
     <div class="container-scroller">
         <div class="row p-0 m-0 proBanner" id="proBanner">
             <div class="col-md-12 p-0 m-0">
                 <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
                     <div class="ps-lg-1">
                         <div class="d-flex align-items-center justify-content-between">
-                            <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
-                            <a href="https://www.bootstrapdash.com/product/majestic-admin-pro/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo" target="_blank" class="btn me-2 buy-now-btn border-0">Get Pro</a>
+                            <p class="mb-0 font-weight-medium me-3 buy-now-text">Welcome to Stay Azerbaijan Dashboard. Add Hotels, Transfers, Categories and etc. you need</p>
+                          
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-between">
@@ -163,7 +163,7 @@
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
                             <img src="~/admin/images/faces/face5.jpg" alt="profile" />
-                            <span class="nav-profile-name">Louis Barnett</span>
+                            <span class="nav-profile-name">Admin</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                             <a class="dropdown-item">
@@ -193,43 +193,9 @@
                             <span class="menu-title">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                            <i class="mdi mdi-circle-outline menu-icon"></i>
-                            <span class="menu-title">UI Elements</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="ui-basic">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/forms/basic_elements.html">
-                            <i class="mdi mdi-view-headline menu-icon"></i>
-                            <span class="menu-title">Form elements</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/charts/chartjs.html">
-                            <i class="mdi mdi-chart-pie menu-icon"></i>
-                            <span class="menu-title">Charts</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/tables/basic-table.html">
-                            <i class="mdi mdi-grid-large menu-icon"></i>
-                            <span class="menu-title">Tables</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/icons/mdi.html">
-                            <i class="mdi mdi-emoticon menu-icon"></i>
-                            <span class="menu-title">Icons</span>
-                        </a>
-                    </li>
+                    
+                    
+                   
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                             <i class="mdi mdi-account menu-icon"></i>
@@ -253,12 +219,14 @@
                         </a>
                     </li>
                 </ul>
-                <div style="display:grid">
-                    <a asp-area="admin" asp-controller="product" asp-action="index" class="btn btn-primary btn-rounded btn-fw">Products</a>
-                    <a asp-area="admin" asp-controller="Category" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1">Category</a>
-                    <a asp-area="admin" asp-controller="information" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1">Information</a>
-                    <a asp-area="admin" asp-controller="Slider" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1">Slider</a>
-                    <a asp-area="admin" asp-controller="Tag" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1">Tag</a>
+                <div style="display:grid ">
+                    <a asp-area="admin" asp-controller="Hotel" asp-action="index" class="btn btn-primary btn-rounded btn-fw" style="background-color:#rgb(113,192,22); color:white; border:none;">Hotel</a>
+                    <a asp-area="admin" asp-controller="Category" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1" style="background-color:#rgb(113,192,22); color:white; border:none;">Category</a>
+                    <a asp-area="admin" asp-controller="Transfer" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1" style="background-color:#rgb(113,192,22); color:white; border:none;">Transfers</a>
+                    <a asp-area="admin" asp-controller="Promocode" asp-action="index" class="btn btn-primary btn-rounded btn-fw mt-1" style="background-color:#rgb(113,192,22); color:white; border:none;">
+                        Promocodes
+                    </a>
+                   
                 </div>
 
             </nav>

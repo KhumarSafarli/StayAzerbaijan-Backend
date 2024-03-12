@@ -15,5 +15,12 @@
         public ICollection<HotelCategory> HotelCategories { get; set; } = null!;
         public ICollection<Room> Rooms { get; set; } = null!;
         public ICollection<HotelMealType> HotelMealTypes { get; set; }
+
+        public Hotel()
+        {
+            HotelCategories = new List<HotelCategory>();
+            Rooms = new List<Room>();
+            HotelMealTypes = new List<HotelMealType>();
+        }
     }
 }
