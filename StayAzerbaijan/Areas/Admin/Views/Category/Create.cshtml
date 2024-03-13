@@ -1,0 +1,37 @@
+﻿@using StayAzerbaijan.Entities
+@model Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div>
+    <h1>
+        Create a category
+    </h1>
+    <div>
+        <div asp-validation-summary="ModelOnly"></div>
+        <form method="post">
+            <h5 style="color:gray;">Name:</h5>
+            <input asp-for="Name" type="text" style="
+                   border: 1px solid blue;
+                   width: 250px;
+                   height: 50px;
+                   padding: 10px;
+                   border-radius: 10px;" /> <br />
+            <span asp-validation-for="Name" class="text-danger"></span><br />
+            <button type="submit" style="
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #83da83;
+    color: white;
+">
+                Save
+            </button>
+            <a asp-action="Index" asp-controller="Category" class="btn btn-outline-secondary">
+                Cancel
+            </a>
+        </form>
+    </div>
+</div>
