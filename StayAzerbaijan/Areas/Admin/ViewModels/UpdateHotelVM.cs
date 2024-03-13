@@ -26,6 +26,7 @@ namespace StayAzerbaijan.Areas.Admin.ViewModels
         [Display(Name = "Main Photo")]
         public IFormFile MainPhoto { get; set; }
 
+
         [Range(1, 5, ErrorMessage = "Star rating must be between 1 and 5")]
         public int Star { get; set; }
 

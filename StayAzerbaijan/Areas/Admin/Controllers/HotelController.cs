@@ -98,7 +98,7 @@ namespace StayAzerbaijan.Areas.Admin.Controllers
 
 
 
-
+        [HttpGet]
         public IActionResult Update(int id)
         {
             if (id == 0)
@@ -106,38 +106,98 @@ namespace StayAzerbaijan.Areas.Admin.Controllers
                 return BadRequest();
             }
 
-            UpdateHotelVM model = _context.Hotels
+            var model = _context.Hotels
                 .Include(h => h.HotelCategories)
                     .ThenInclude(hc => hc.Category)
-                .Where(h => h.Id == id)
-                .Select(h => new UpdateHotelVM
-                {
-                    Id = h.Id,
-                    Name = h.Name,
-                    Location = h.Location,
-                    PricePerNight = h.Price,
-                    Description = h.Description,
-                    Star = (int)h.Star,
-                    IsAvailableOnWeekend = h.IsAvailableOnWeekend,
-                    MainPhoto = null,
-                    Categories = _context.Categories.ToList(),
-                    HotelCategories = h.HotelCategories.ToList()
-                }).FirstOrDefault(p => p.Id == id)!;
+                .FirstOrDefault(h => h.Id == id);
 
-            return View(model);
+            if (model == null)
+            {
+                return NotFound();
+            }
+
+           
+            var categories = _context.Categories.ToList();
+
+            var updateHotelVM = new UpdateHotelVM
+            {
+                Id = model.Id,
+                Name = model.Name,
+                Location = model.Location,
+                PricePerNight = model.Price,
+                Description = model.Description,
+                Star = (int)model.Star,
+                IsAvailableOnWeekend = model.IsAvailableOnWeekend,
+                MainPhoto = null,
+                Categories = categories, 
+                HotelCategories = model.HotelCategories.ToList(),
+                CategoryIds = model.HotelCategories.Select(hc => hc.CategoryId).ToList()
+            };
+
+            return View(updateHotelVM);
         }
-
-
-
-
-
 
         [HttpPost]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Update(UpdateHotelVM hotelVM)
         {
-          
+            if (!ModelState.IsValid)
+            {
+                hotelVM.Categories = _context.Categories.ToList();
+                return View(hotelVM);
+            }
 
-            return Json(new { status = 200, Message = "Hotel successfully deleted" }); 
+            var hotel = await _context.Hotels
+                .Include(h => h.HotelCategories)
+                .FirstOrDefaultAsync(h => h.Id == hotelVM.Id);
+
+            if (hotel == null)
+            {
+                return NotFound();
+            }
+
+            hotel.Name = hotelVM.Name;
+            hotel.Location = hotelVM.Location;
+            hotel.Price = hotelVM.PricePerNight;
+            hotel.Description = hotelVM.Description;
+            hotel.Star = hotelVM.Star;
+            hotel.IsAvailableOnWeekend = hotelVM.IsAvailableOnWeekend;
+            hotel.HotelCategories.Clear();
+            foreach (var categoryId in hotelVM.CategoryIds)
+            {
+                hotel.HotelCategories.Add(new HotelCategory { CategoryId = categoryId });
+            }
+            if (hotelVM.MainPhoto != null)
+            {
+                string mainPhotoName = await hotelVM.MainPhoto.GeneratePhoto(_env.WebRootPath, "assets", "images");
+                hotel.MainImgUrl = mainPhotoName;
+            }
+
+            if (hotelVM.SliderPhoto != null)
+            {
+                string sliderPhotoName = await hotelVM.SliderPhoto.GeneratePhoto(_env.WebRootPath, "assets", "images");
+                hotel.sliderImgUrl= sliderPhotoName;
+            }
+
+            _context.Update(hotel);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var hotel = await _context.Hotels.FindAsync(id);
+            if (hotel == null)
+            {
+                return NotFound();
+            }
+
+            _context.Hotels.Remove(hotel);
+            await _context.SaveChangesAsync();
+
+            return Json(new { status = 200, Message = "Hotel successfully deleted" });
+        }
+
     }
 }

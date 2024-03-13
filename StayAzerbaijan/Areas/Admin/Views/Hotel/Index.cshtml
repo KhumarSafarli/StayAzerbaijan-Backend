@@ -65,17 +65,20 @@
     <script>
         $(document).on("click", "#deleteHotel", function (e) {
             e.preventDefault();
-            let domain = "https://localhost:7024";
             let endpoint = $(this).attr("href");
-            let url = domain + endpoint;
+            let url = endpoint; 
             let result = confirm("Are you sure you want to delete this hotel?");
             if (result) {
-                fetch(url, { method: "POST" }).then(response => response.json()).then(data => {
-                    if (data.status == 200) {
-                        $(this).closest("tr").remove();
-                    }
-                });
+                fetch(url, { method: "POST" })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status == 200) {
+                            $(this).closest("tr").remove();
+                        }
+                    })
+                    .catch(error => console.error('Error:', error)); 
             }
         });
+
     </script>
 }
