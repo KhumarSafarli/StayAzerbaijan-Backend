@@ -23,5 +23,18 @@ namespace StayAzerbaijan.ViewModels
         public string PromoCode { get; set; }
         public decimal PromoCodeDiscount { get; set; }
         public List<Promocode> Promocodes { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string PassportNumber { get; set; }
+        public string MobileNumber { get; set; }
+        public Reservation Reservation { get; set; }
+        public List<Reservation> Reservations { get; set; }
+
+
+        public string HotelName { get; set; }
+        public string RoomType { get; set; }
+        public decimal Price { get; set; }
+        public string CheckIn { get; internal set; }
+        public string CheckOut { get; internal set; }
     }
 }

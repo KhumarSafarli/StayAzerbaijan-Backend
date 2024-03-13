@@ -27,7 +27,10 @@ namespace StayAzerbaijan.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Hotel> model = _context.Hotels.ToList(); 
+            IEnumerable<Hotel> model = _context.Hotels
+       .Include(h => h.HotelCategories)
+           .ThenInclude(hc => hc.Category)
+       .ToList();
             return View(model);
         }
 

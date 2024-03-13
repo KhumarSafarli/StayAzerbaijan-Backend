@@ -23,8 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Views\Promocode\" />
-    <Folder Include="Areas\Admin\Views\Transfer\" />
     <Folder Include="Services\" />
     <Folder Include="ViewComponents\" />
   </ItemGroup>

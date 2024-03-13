@@ -47,6 +47,8 @@ namespace StayAzerbaijan.Controllers
                 Hotel = hotel,
                 Room = room,
                 MealTypes = mealTypes,
+                HotelName = hotel.Name,
+                RoomType = room != null ? room.Name : "",
                 RoomDetails = new RoomDetailsVM
                 {
                     Room = room,
@@ -83,6 +85,47 @@ namespace StayAzerbaijan.Controllers
                 return NotFound();
             }
         }
+        [HttpPost]
+        public IActionResult CreateReservation(Reservation reservation)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var reservationEntity = new Reservation
+                    {
+                        Name = reservation.Name,
+                        LastName = reservation.LastName,
+                        HotelName = reservation.HotelName,
+                        RoomType = reservation.RoomType,
+                        PaxCount = reservation.PaxCount,
+                        Price = reservation.Price,
+                        PassportNumber = reservation.PassportNumber,
+                        MobileNumber = reservation.MobileNumber,
+                        CheckIn = reservation.CheckIn,
+                        CheckOut = reservation.CheckOut
+                    };
+
+                    _context.Reservations.Add(reservationEntity);
+                    _context.SaveChanges();
+
+                    return Ok(new { status = 200, message = "Rezervasiyanız təsdiqləndi! Sizinlə əlaqə saxlayacağıq." });
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error creating reservation: {ex.Message}");
+                    return StatusCode(500, "An error occurred while processing your request.");
+                }
+            }
+            else
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                return BadRequest(new { status = 400, errors = errors });
+            }
+        }
+
+
+
 
     }
 }

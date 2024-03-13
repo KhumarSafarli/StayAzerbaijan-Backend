@@ -20,6 +20,7 @@ namespace StayAzerbaijan.DAL
         public DbSet<Promocode> Promocodes { get; set; }
         public DbSet<CustomUser> CustomUsers { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
 
     }
 }

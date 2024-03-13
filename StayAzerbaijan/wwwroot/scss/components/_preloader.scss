@@ -1,0 +1,17 @@
+#preloader {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #ffff url(../assets/images/preload.gif) no-repeat center center;
+  height: 100vh;
+  background-size: 35%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition: opacity 1s ease-in-out;
+}
+.hide-preloader {
+  opacity: 0;
+  pointer-events: none;
+}

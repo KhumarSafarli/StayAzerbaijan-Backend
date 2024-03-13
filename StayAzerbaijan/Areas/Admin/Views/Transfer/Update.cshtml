@@ -1,0 +1,75 @@
+﻿@model StayAzerbaijan.Areas.Admin.ViewModels.UpdateTransferVM
+@{
+    ViewData["Title"] = "Update Transfer";
+}
+@{
+    ViewData["Title"] = "Update Transfer";
+}
+
+<div>
+    <h1>Update Transfer</h1>
+    <div>
+        <div asp-validation-summary="ModelOnly"></div>
+        <form method="post" enctype="multipart/form-data">
+
+            <h5 style="color: gray;">Type:</h5>
+            <input asp-for="Name" type="text" style="
+                   border: 1px solid blue;
+                   width: 250px;
+                   height: 50px;
+                   padding: 10px;
+                   border-radius: 10px;" /> <br />
+            <span asp-validation-for="Name" class="text-danger"></span><br />
+
+            <h5 style="color: gray;">Price:</h5>
+            <input asp-for="Price" type="number" style="
+                   border: 1px solid blue;
+                   width: 250px;
+                   height: 50px;
+                   padding: 10px;
+                   border-radius: 10px;" /> <br />
+            <span asp-validation-for="Price" class="text-danger"></span><br />
+
+            <h5 style="color: gray;">Model:</h5>
+            <textarea asp-for="Description" style="
+                   border: 1px solid blue;
+                   width: 250px;
+                   height: 100px;
+                   padding: 10px;
+                   border-radius: 10px;"></textarea><br />
+            <span asp-validation-for="Description" class="text-danger"></span><br />
+
+            <h5 style="color: gray;">Capacity:</h5>
+            <input asp-for="PaxCount" type="number" style="
+                   border: 1px solid blue;
+                   width: 250px;
+                   height: 50px;
+                   padding: 10px;
+                   border-radius: 10px;" /> <br />
+            <span asp-validation-for="PaxCount" class="text-danger"></span><br />
+
+            <h5 style="color: gray;">Image:</h5>
+            <input asp-for="Image" type="file" style="
+                   border: 1px solid blue;
+                   width: 250px;
+                   height: 50px;
+                   padding: 10px;
+                   border-radius: 10px;" /> <br />
+            <span asp-validation-for="Image" class="text-danger"></span><br />
+
+
+            <button type="submit" style="
+                   width: 100px;
+                   height: 40px;
+                   border: none;
+                   border-radius: 5px;
+                   background-color: #83da83;
+                   color: white;">
+                Save
+            </button>
+            <a asp-action="Index" asp-controller="Transfer" class="btn btn-outline-secondary">
+                Cancel
+            </a>
+        </form>
+    </div>
+</div>

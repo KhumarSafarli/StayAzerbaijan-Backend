@@ -1,13 +1,14 @@
 ﻿@using StayAzerbaijan.Entities
-@model IEnumerable<Hotel>
+@model List<Transfer>
 @{
-    ViewData["Title"] = "Hotels Page";
+    ViewData["Title"] = "Index";
 }
 
 <div class="table pt-3">
-    <h1>@ViewData["Title"]</h1>
+    <h1>transfer Page</h1>
     <div>
-        <a asp-controller="Hotel" asp-action="Create" class="btn btn-success btn-rounded btn-fw">Create</a>
+        <a asp-controller="Transfer" asp-action="Create" class="btn btn-success btn-rounded btn-fw">Create</a>
+
     </div>
     <table class="table table-dark mt-5">
         <thead>
@@ -16,14 +17,19 @@
                     #
                 </th>
                 <th>
-                    Hotel Image
+                   Image
                 </th>
                 <th>
-                    Hotel Name
+                    Type
                 </th>
-                <th>Category</th>
                 <th>
-                    Hotel Price
+                  Price
+                </th>
+                <th>
+                    Capacity
+                </th>
+                <th>
+                    Model
                 </th>
                 <th>
                     Settings
@@ -34,42 +40,47 @@
             @{
                 int count = 0;
             }
-            @foreach (var hotel in Model)
+            @foreach (var transfer in Model)
             {
                 <tr>
                     <td>
                         @(++count)
                     </td>
                     <td>
-                        <img src="~/assets/images/@hotel.MainImgUrl">
-
+                        <img src="~/assets/images/@transfer.Image" alt="Transfer Image" style="max-width: 100px; max-height: 100px;" />
                     </td>
                     <td>
-                        @hotel.Name
+                        @transfer.Name
                     </td>
-                    <td> @string.Join(", ", hotel.HotelCategories.Select(hc => hc.Category.Name))</td>
                     <td>
-                        @hotel.Price
+                        @transfer.Price
+                    </td>
+                    <td>
+                        @transfer.PaxCount
+                    </td>
+                    <td>
+                        @transfer.Description
                     </td>
                     <td>
                         <div>
-                            <a asp-controller="Hotel" asp-action="Update" asp-route-id="@hotel.Id" class="btn btn-warning btn-rounded btn-fw">Update</a>
-                            <a asp-controller="Hotel" id="deleteHotel" asp-action="Delete" asp-route-id="@hotel.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
+                            <a asp-controller="Transfer" asp-action="Update" asp-route-id="@transfer.Id" class="btn btn-warning btn-rounded btn-fw">Update</a>
+                            <a asp-controller="Transfer" id="deletetransfer" asp-action="Delete" asp-route-id="@transfer.Id" class="btn btn-danger btn-rounded btn-fw">Delete</a>
                         </div>
                     </td>
                 </tr>
             }
+
         </tbody>
     </table>
 </div>
 
 @section Scripts{
     <script>
-        $(document).on("click", "#deleteHotel", function (e) {
+        $(document).on("click", "#deletetransfer", function (e) {
             e.preventDefault();
             let endpoint = $(this).attr("href");
-            let url = endpoint; 
-            let result = confirm("Are you sure you want to delete this hotel?");
+            let url = endpoint;
+            let result = confirm("Are you sure you want to delete this transfer?");
             if (result) {
                 fetch(url, { method: "POST" })
                     .then(response => response.json())
@@ -78,9 +89,8 @@
                             $(this).closest("tr").remove();
                         }
                     })
-                    .catch(error => console.error('Error:', error)); 
+                    .catch(error => console.error('Error:', error));
             }
         });
-
     </script>
 }

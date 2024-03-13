@@ -44,8 +44,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG90ZWxcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/Promocode/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvbW9jb2RlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/Promocode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvbW9jb2RlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/Transfer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNmZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/Transfer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNmZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/Transfer/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNmZXJcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Hp/Desktop/stayazerbaijan/StayAzerbaijan/StayAzerbaijan/Areas/Admin/Views/_ViewImports.cshtml]

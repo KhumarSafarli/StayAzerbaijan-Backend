@@ -533,6 +533,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\10f612f5-da29-4327-94ce-304e917d0c40background.png"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\154a7c83-4c81-43b9-973c-d205bfec86e5247 canlı dəstək.png",
+      "PackagePath": "staticwebassets\\assets\\images\\154a7c83-4c81-43b9-973c-d205bfec86e5247 canlı dəstək.png"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\26c091ce-4574-4d37-8f57-bf4c6c923db8background.png",
       "PackagePath": "staticwebassets\\assets\\images\\26c091ce-4574-4d37-8f57-bf4c6c923db8background.png"
     },
@@ -685,6 +689,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\f3435b4e-1bfe-4b63-8b6d-b45dae8b7bcbPromotion Image.png"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\ffcdfcc5-1c40-42d7-b474-a5bd6c527de6247 canlı dəstək (4).png",
+      "PackagePath": "staticwebassets\\assets\\images\\ffcdfcc5-1c40-42d7-b474-a5bd6c527de6247 canlı dəstək (4).png"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\footer.png",
       "PackagePath": "staticwebassets\\assets\\images\\footer.png"
     },
@@ -765,6 +773,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\pikpalaceslider.jpg"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\preload.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\preload.gif"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\profilepic.png",
       "PackagePath": "staticwebassets\\assets\\images\\profilepic.png"
     },
@@ -843,6 +855,10 @@
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\checkout.js",
       "PackagePath": "staticwebassets\\common\\checkout.js"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\loader.js",
+      "PackagePath": "staticwebassets\\common\\loader.js"
     },
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\common\\register.js",
@@ -971,6 +987,10 @@
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_hotel-example-card.scss",
       "PackagePath": "staticwebassets\\scss\\components\\_hotel-example-card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_preloader.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_preloader.scss"
     },
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\scss\\components\\_room-example.scss",

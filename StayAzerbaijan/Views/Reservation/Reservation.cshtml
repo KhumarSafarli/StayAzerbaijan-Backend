@@ -16,6 +16,8 @@
 
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-Gm0vjOMo3pzzV+LVVZoWNoWIl/2cpjy0xcXjiNhLetxIdUZsBTP+BtiSLa9bhE1L" crossorigin="anonymous"></script>
+
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -71,22 +73,22 @@
             <h5>Adına rezervasiya olacaq şəxsin kontakt məlumatlarını daxil edin:</h5>
             <div class="form-container">
 
-                <form id="reservation-form" class="needs-validation">
+                <form id="reservation-form" class="needs-validation" method="post" action="@Url.Action("CreateReservation", "Reservation")">
                     <div class="form-group">
-                        <label for="first-name">Ad:</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="name">Ad:</label>
+                        <input asp-for="Name" type="text" class="form-control" id="name" name="Name">
                     </div>
                     <div class="form-group">
                         <label for="last-name">Soyad:</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <input asp-for="LastName" type="text" class="form-control" id="last-name" name="LastName">
                     </div>
                     <div class="form-group">
                         <label for="passport-number">Passport nömrəsi:</label>
-                        <input type="text" id="passport-number" name="passport-number" required>
+                        <input asp-for="PassportNumber" type="text" class="form-control" id="passport-number" name="PassportNumber">
                     </div>
                     <div class="form-group">
                         <label for="phone-number">Mobil nömrə:</label>
-                        <input type="tel" id="phone-number" name="phone-number" required>
+                        <input asp-for="MobileNumber" type="tel" class="form-control" id="phone-number" name="MobileNumber">
                     </div>
                     <div class="form-group">
                         <label for="transfer-option">Transfer:</label>
@@ -96,20 +98,48 @@
                             <option value="business">Business</option>
                             <option value="viano">Viano</option>
                             <option value="neoplan">Neoplan</option>
+
                         </select>
                         <p class="qeyd">*Qeyd: Rezervasiyanız təsdiqləndikdən sonra transfer sizinlə əlaqə saxlayaraq, pickup ünvanını dəqiqləşdirəcək.</p>
                     </div>
+                    <input asp-for="HotelName" type="hidden" id="hotel-name" name="HotelName" value="@Model.Hotel.Name">
+                    <input asp-for="RoomType" type="hidden" id="room-type" name="RoomType" value="@Model.SelectedRoomType">
+                    <input asp-for="PaxCount" type="hidden" id="pax-count" name="PaxCount" value="@Model.PaxCount">
+                    <input asp-for="Price" type="hidden" id="total-price" name="Price" value="@Model.TotalPrice">
+                    <input asp-for="CheckIn" type="hidden" id="checkin-date" name="CheckIn" value="@Model.CheckInDate.ToString("yyyy-MM-dd HH:mm:ss")">
+                    <input asp-for="CheckOut" type="hidden" id="checkout-date" name="CheckOut" value="@Model.CheckOutDate.ToString("yyyy-MM-dd HH:mm:ss")">
+                 
 
+                    <button type="submit" id="reserve" class="btn btn-primary">Təsdiqlə</button>
+                  
 
                 </form>
+
+
+
+            </div>
+            
+            <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="successModalLabel">Uğurlu rezervasiya!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Rezervasiyanız təsdiqləndi! Sizinlə əlaqə saxlayacağıq.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-            <div class="additional-transfer"></div>
-            <div class="price-checkout">
-                <p class="total price"></p>
-                <a href="#" class="checkout"></a>
-            </div>
+           
             <div class="container">
 
                 <div class="row">
@@ -123,7 +153,7 @@
                           
                             <li class="list-group-item d-flex justify-content-between">
                                 <span>Toplam:</span>
-                                <strong id="total-price">@Model.TotalPrice.ToString("C", new System.Globalization.CultureInfo("az-AZ"))</strong>
+                                <strong id="totalprice">@Model.TotalPrice.ToString("C", new System.Globalization.CultureInfo("az-AZ"))</strong>
                             </li>
 
 
@@ -138,19 +168,28 @@
                             </div>
                         </form>
 
-                        <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="paymentSuccessModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                        <!-- Modal -->
+                        <div class="modal fade" id="promoCodeAppliedModal" tabindex="-1" role="dialog" aria-labelledby="promoCodeAppliedModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="paymentSuccessModalLabel">Payment Successful</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="modal-title" id="promoCodeAppliedModalLabel">Promo Code Applied</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
                                     <div class="modal-body">
-                                        Your payment was successfully processed.
+                                        Your promo code has been applied successfully!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
 
                     </div>
                     <div class="col-md-8 order-md-1">
@@ -222,11 +261,13 @@
 <script>
         document.addEventListener('DOMContentLoaded', function () {
             const transferOptionSelect = document.getElementById('transfer-option');
-            const totalPriceElement = document.getElementById('total-price');
+            const totalPriceElement = document.getElementById('totalprice');
             const promoCodeInput = document.getElementById('promo-code-input');
             const applyPromoCodeBtn = document.getElementById('apply-promo-code-btn');
-            let promoCodeApplied = false; 
+            let promoCodeApplied = false;
+
             function updateTotalPrice() {
+                console.log('updateTotalPrice function called');
                 const selectedTransferOption = transferOptionSelect.value;
                 let totalPrice = parseFloat('@Model.TotalPrice');
                 switch (selectedTransferOption) {
@@ -248,23 +289,20 @@
 
                 totalPriceElement.textContent = totalPrice.toFixed(2) + ' AZN';
             }
+
             transferOptionSelect.addEventListener('change', updateTotalPrice);
 
             applyPromoCodeBtn.addEventListener('click', function () {
+                console.log('updateTotalPrice function called');
                 const promoCode = promoCodeInput.value.trim();
                 if (promoCode !== '' && !promoCodeApplied) {
-                
                     fetch(`/Reservation/ApplyPromoCode?promoCode=${promoCode}`)
                         .then(response => {
                             if (response.ok) {
-                              
                                 response.json().then(discountAmount => {
-                          
                                     let totalPrice = parseFloat(totalPriceElement.textContent);
-
                                     totalPrice -= discountAmount;
                                     totalPriceElement.textContent = totalPrice.toFixed(2) + ' AZN';
-
                                     promoCodeApplied = true;
                                 });
                             } else {
@@ -281,9 +319,37 @@
                     alert('Zəhmət olmasa promokodu daxil edin.');
                 }
             });
+
             updateTotalPrice();
         });
-     
+
+
+
+        $(document).ready(function () {
+            $(document).on("click", "#reserve", function (e) {
+                e.preventDefault();
+                let url = $(this).closest("form").attr("action");
+                let formData = new FormData($(this).closest("form")[0]);
+                fetch(url, {
+                    method: "POST",
+                    body: formData
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.status == 200) {
+                            $('#successModal').modal('show');
+                        } else {
+                            console.error('Error:', data.message);
+                        }
+                    })
+                    .catch(error => console.error('Fetch Error:', error));
+            });
+        });
 
 
 </script>

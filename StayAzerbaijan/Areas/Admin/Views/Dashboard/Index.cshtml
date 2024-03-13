@@ -1,4 +1,93 @@
-﻿﻿
+﻿@using StayAzerbaijan.Entities
+@model IEnumerable<Reservation>
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Reservations";
 }
+
+<div class="table pt-3">
+    <h1>@ViewData["Title"]</h1>
+    <div>
+      
+    </div>
+    <table class="table table-dark mt-5">
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Guest Name
+                </th>
+                <th>
+                    Guest Lastname
+                </th>
+                <th>Hotel</th>
+                <th>
+                    Room Type
+                </th>
+                <th>
+                    Guest number
+                </th>
+                <th>
+                   Price
+                </th>
+                <th>
+                    Mob number
+                </th>
+                <th>
+                    Passport number
+                </th>
+                <th>
+                    Check In
+                </th>
+                <th>
+                    Check Out
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int count = 0;
+            }
+            @foreach (var reservation in Model)
+            {
+                <tr>
+                    <td>
+                        @(++count)
+                    </td>
+                    <td>
+                       @reservation.Name
+
+                    </td>
+                    <td>
+                        @reservation.LastName
+                    </td>
+                    <td> @reservation.HotelName</td>
+                    <td>
+                        @reservation.RoomType
+                    </td>
+                    <td>
+                        @reservation.PaxCount
+                    </td>
+                    <td>
+                        @reservation.Price
+                    </td>
+                    <td>
+                        @reservation.MobileNumber
+                    </td>
+                    <td>
+                        @reservation.PassportNumber
+                    </td>
+                    <td>
+                        @reservation.CheckIn
+                    </td>
+                    <td>
+                        @reservation.CheckOut
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
