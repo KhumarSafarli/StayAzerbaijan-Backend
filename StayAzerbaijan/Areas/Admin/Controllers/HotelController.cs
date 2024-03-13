@@ -99,18 +99,39 @@ namespace StayAzerbaijan.Areas.Admin.Controllers
 
 
 
-
         public IActionResult Update(int id)
         {
-            
-            UpdateHotelVM model = new UpdateHotelVM
+            if (id == 0)
             {
-                
-            };
+                return BadRequest();
+            }
+
+            UpdateHotelVM model = _context.Hotels
+                .Include(h => h.HotelCategories)
+                    .ThenInclude(hc => hc.Category)
+                .Where(h => h.Id == id)
+                .Select(h => new UpdateHotelVM
+                {
+                    Id = h.Id,
+                    Name = h.Name,
+                    Location = h.Location,
+                    PricePerNight = h.Price,
+                    Description = h.Description,
+                    Star = (int)h.Star,
+                    IsAvailableOnWeekend = h.IsAvailableOnWeekend,
+                    MainPhoto = null,
+                    Categories = _context.Categories.ToList(),
+                    HotelCategories = h.HotelCategories.ToList()
+                }).FirstOrDefault(p => p.Id == id)!;
+
             return View(model);
         }
 
-     
+
+
+
+
+
         [HttpPost]
         public IActionResult Delete(int id)
         {

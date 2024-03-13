@@ -525,6 +525,14 @@
       "PackagePath": "staticwebassets\\assets\\icons\\zoom.svg"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\0a32c872-a26b-4d9e-9920-29c4814bbdd1background.png",
+      "PackagePath": "staticwebassets\\assets\\images\\0a32c872-a26b-4d9e-9920-29c4814bbdd1background.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\10f612f5-da29-4327-94ce-304e917d0c40background.png",
+      "PackagePath": "staticwebassets\\assets\\images\\10f612f5-da29-4327-94ce-304e917d0c40background.png"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\26c091ce-4574-4d37-8f57-bf4c6c923db8background.png",
       "PackagePath": "staticwebassets\\assets\\images\\26c091ce-4574-4d37-8f57-bf4c6c923db8background.png"
     },
@@ -575,6 +583,10 @@
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\99.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\99.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\9e43b39d-5e5c-42af-a52b-57a47aac34aebackground.png",
+      "PackagePath": "staticwebassets\\assets\\images\\9e43b39d-5e5c-42af-a52b-57a47aac34aebackground.png"
     },
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\Ellipse.png",
@@ -651,6 +663,10 @@
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\e3f39e1a-1720-4198-ba22-d56878d1a2fcbackground.png",
       "PackagePath": "staticwebassets\\assets\\images\\e3f39e1a-1720-4198-ba22-d56878d1a2fcbackground.png"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\f3435b4e-1bfe-4b63-8b6d-b45dae8b7bcbPromotion Image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\f3435b4e-1bfe-4b63-8b6d-b45dae8b7bcbPromotion Image.png"
     },
     {
       "Id": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\footer.png",

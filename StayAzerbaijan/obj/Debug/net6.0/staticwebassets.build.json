@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "saEyyeMcEG7Dcw9qNVIs+DbaL9hPkkkaHBOJee9WXPU=",
+  "Hash": "Lb0ivE+i+dtmaJdWBEDfR1EOzzXM4NNjOfSAbw8w8AE=",
   "Source": "StayAzerbaijan",
   "BasePath": "_content/StayAzerbaijan",
   "Mode": "Default",
@@ -2244,6 +2244,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\zoom-icon.svg"
     },
     {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\0a32c872-a26b-4d9e-9920-29c4814bbdd1background.png",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/0a32c872-a26b-4d9e-9920-29c4814bbdd1background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\0a32c872-a26b-4d9e-9920-29c4814bbdd1background.png"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\10f612f5-da29-4327-94ce-304e917d0c40background.png",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/10f612f5-da29-4327-94ce-304e917d0c40background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\10f612f5-da29-4327-94ce-304e917d0c40background.png"
+    },
+    {
       "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\26c091ce-4574-4d37-8f57-bf4c6c923db8background.png",
       "SourceId": "StayAzerbaijan",
       "SourceType": "Discovered",
@@ -2463,6 +2497,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\99.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\9e43b39d-5e5c-42af-a52b-57a47aac34aebackground.png",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/9e43b39d-5e5c-42af-a52b-57a47aac34aebackground.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\9e43b39d-5e5c-42af-a52b-57a47aac34aebackground.png"
     },
     {
       "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\aboutpage.png",
@@ -2786,6 +2837,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\Ellipse.png"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\f3435b4e-1bfe-4b63-8b6d-b45dae8b7bcbPromotion Image.png",
+      "SourceId": "StayAzerbaijan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\",
+      "BasePath": "_content/StayAzerbaijan",
+      "RelativePath": "assets/images/f3435b4e-1bfe-4b63-8b6d-b45dae8b7bcbPromotion Image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\f3435b4e-1bfe-4b63-8b6d-b45dae8b7bcbPromotion Image.png"
     },
     {
       "Identity": "C:\\Users\\Hp\\Desktop\\stayazerbaijan\\StayAzerbaijan\\StayAzerbaijan\\wwwroot\\assets\\images\\footer.png",
