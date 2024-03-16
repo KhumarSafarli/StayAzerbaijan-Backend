@@ -5,6 +5,7 @@
     ViewData["Title"] = "Reservations";
 }
 
+
 <div class="table pt-3">
     <h1>@ViewData["Title"]</h1>
     <div>
@@ -91,3 +92,22 @@
         </tbody>
     </table>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#loginModal').modal('show');
+    });
+
+    $(document).ready(function () {
+        $('#loginBtn').click(function () {
+            var username = $('#username').val();
+            var password = $('#password').val();
+
+            if (username === 'admin' && password === 'admin123') {
+                $('#loginModal').modal('hide');
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    });
+
+</script>
